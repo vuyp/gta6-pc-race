@@ -1797,6 +1797,14 @@
   "updates": [
     {
       "t": "2026-11-27T14:05:00Z",
+      "title": "PortWatch removes its pinned multiplayer message",
+      "points": [
+        "PortWatch's change log shows its pinned message, which had announced multiplayer on a private build at 25 to 30 frames a second, replaced at 13:28 UTC by a call-out for build submissions and then marked as removed at 13:51 UTC, each change noted as the owner's request; nothing is pinned there now.",
+        "The claim, relayed here at 22:41 UTC on 26 November as PortWatch's report and unconfirmed, concerned a private build whose code is not public, with no hardware, session length or method given, and this page has no new information on it."
+      ]
+    },
+    {
+      "t": "2026-11-27T14:05:00Z",
       "title": "vilocity reports 12 unattended minutes in the open world at 25 to 29 frames a second",
       "points": [
         "Its README (13:23 UTC) now marks the world as keeping running: twelve minutes of the opening and twelve in the open world, unattended, with no lost device, log error or driver timeout, where it listed a driver timeout about 7 minutes in before; it says longer play is not measured.",
