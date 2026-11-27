@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T07:21:00Z",
+  "checked": "2026-11-27T07:52:00Z",
   "cadence_minutes": 15,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -1787,6 +1787,11 @@
       "name": "PiloteBox",
       "repo": "PiloteCode/PiloteBox",
       "note": "A compatibility layer built on VIctory's code for NVIDIA cards, started on 27 November and tested on an RTX 5090 with a Core i9-14900KF. Its README (version 0.12.2) reports 10.5 to 12.5 frames a second on the larger console's profile in the prologue's first playable scenes at about 4,800 draws a frame, with no crash in eleven automated runs of four to five minutes; it calls the opening and prologue playable, measures only in those automated runs and does not name its title."
+    },
+    {
+      "name": "Tequesta",
+      "repo": "0v3rr/Tequesta",
+      "note": "A Rust compatibility layer and Direct3D 12 translation runtime for NVIDIA RTX cards on Windows, with its own settings overlay and native keyboard and mouse input, tested on an RTX A4500 with 28 GB of system memory. Its README reports full character movement in the opening scenes and 5 to 27 frames a second in 3D scenes with a performance option on, and gives no session length and no crash record."
     }
   ],
   "updates": [
