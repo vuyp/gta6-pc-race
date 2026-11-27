@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T15:38:00Z",
+  "checked": "2026-11-27T16:11:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -199,24 +199,24 @@
       "pos": 1,
       "name": "victory-fork",
       "repo": "fxceless/victory-fork",
-      "kind": "Fork of VIctory, formerly named victory-gta6; since 27 November based on VIctory-NVIDIA",
+      "kind": "Fork of VIctory, formerly named victory-gta6; based on VIctory-NVIDIA since 27 November, with ray tracing work of its own",
       "stage": 6,
       "basis": "Project README: the maintainer's own figures from one PC, not confirmed by anyone else; the rest of its README is VIctory-NVIDIA's text, which this row does not read",
-      "status": "Its README (15:06 UTC on 27 November) says this fork stopped its own line of work that day and is now based on VIctory-NVIDIA, after a 25-minute play session with it at 2560x1440 on an RTX 4070 averaged about 17 frames a second in the open world, against about 10 at a lower render size for its last own code in the busiest scenes, in sessions that did not cover the same scenes. The rest of its README is VIctory-NVIDIA's own text and figures, which this page does not read into this row, and it gives no crash status for the 25 minutes, so the lanes read 17 frames a second and 25 minutes, and the ray-tracing figures of its earlier line no longer apply.",
-      "changed": "2026-11-27T15:38:00Z",
+      "status": "Its README (16:01 UTC on 27 November) says this fork, now based on VIctory-NVIDIA, starts the game with its own ray tracing on by default, calls that work in progress and measures about 11 frames a second at 5,000 to 9,000 draws a frame and about 8 at 9,000 to 12,000 on an RTX 4070 at 1920x1080, against about 18 to 14 and 12.5 with it off, with the water's own light still left out on cards with 32-lane waves. A 25-minute play session at 2560x1440 that averaged about 17 frames a second was run with VIctory-NVIDIA itself, which has ray tracing off by default, and the README gives no crash status for it, so the lanes read the ray-tracing figures of 8 to 11 frames a second and keep the 25 minutes, flagged as run with it off.",
+      "changed": "2026-11-27T16:11:00Z",
       "lanes": {
         "picture": {
           "step": 3,
-          "text": "estimated light, ray tracing off; its base's own description"
+          "text": "ray tracing on and unfinished; the water's own light left out"
         },
         "speed": {
-          "low": 17,
-          "high": 17,
-          "text": "about 17 fps average over a 25-minute play session at 2560x1440"
+          "low": 8,
+          "high": 11,
+          "text": "about 8 to 11 fps with ray tracing on, its default, at 1920x1080"
         },
         "stability": {
           "minutes": 25,
-          "text": "25-minute play session on its new base; no crash stated"
+          "text": "25 min with ray tracing off; none reported with it on"
         }
       },
       "lead": "victory-fork, a fork now based on VIctory-NVIDIA,",
@@ -738,8 +738,8 @@
       "kind": "Xbox Series compatibility layer for Windows, published on 25 November",
       "stage": 6,
       "basis": "Project README: its own figures from unattended twelve-minute runs on one machine, not confirmed by anyone else",
-      "changed": "2026-11-27T15:38:00Z",
-      "status": "Its README (15:05 UTC on 27 November) marks the world as keeping running, with twelve minutes of the opening and twelve in the open world (mostly standing, with three short walks), both unattended, without a lost device, a log error or a driver timeout, says longer play is not measured, and now adds that a first start on a PC that had never run the game (its issue 1, an RTX 5070 Ti) stood 30 seconds at the world's first frame before the game's own watchdog ended the run, that a change should now avoid this and that the change has not been tried on a cold start. It reports a median of 33 frames a second through the opening, 28 to 29 at 5,000 draws a frame and 25 at 9,000 in the open world on an RTX 5080 with a Ryzen 9 9950X3D on the smaller console's profile, says 30 is not held where the world is dense, still lists 26 console programs whose draws are dropped on 32-lane cards and textures that can appear late, and says the game is not playable yet.",
+      "changed": "2026-11-27T16:11:00Z",
+      "status": "Its README (16:07 UTC on 27 November) marks the world as keeping running, with twelve minutes of the opening and twelve in the open world (mostly standing, with three short walks), both unattended, without a lost device, a log error or a driver timeout, says longer play is not measured, and says a first start on a PC that had never run the game (its issue 1, an RTX 5070 Ti) stood 30 seconds at the world's first frame before the game's own watchdog ended the run, and that a change now limits that wait to 12 seconds, reproduced and checked on its own RTX 5080 with an empty cache, where the limit was reached once, after 12.9 seconds without a frame, with no crash and 21 to 29 frames a second a minute later. It reports a median of 33 frames a second through the opening, 28 to 29 at 5,000 draws a frame and 25 at 9,000 in the open world on an RTX 5080 with a Ryzen 9 9950X3D on the smaller console's profile, says 30 is not held where the world is dense, still lists 26 console programs whose draws are dropped on 32-lane cards and textures that can appear late, and says the game is not playable yet.",
       "lanes": {
         "picture": {
           "step": 3,
@@ -752,7 +752,7 @@
         },
         "stability": {
           "minutes": 12,
-          "text": "12 min unattended, no loss; a cold first start ended early"
+          "text": "12 min unattended, no loss; cold start checked, no crash"
         }
       },
       "tested": {
@@ -1137,9 +1137,9 @@
       "repo": "Fayberr/Victory-United",
       "kind": "Tree that folds work from VIctory forks into one, rebuilt on 26 November on Vice-Tay's code",
       "stage": 6,
-      "changed": "2026-11-27T15:38:00Z",
-      "status": "Its README (15:07 UTC) says its tree, built on Vice-Tay's code, loads a save in the open world and renders the city, at 8 to 12 frames a second (9.5 on average) in three 7-minute play runs with the character moving, on an RTX 3080 Ti at half render scale on the smaller console's profile, with no panic or lost graphics device in the log, and that it is not playable yet and aims at 20. It described the same runs as one fixed walking route at 12:22 UTC and now calls them play runs without saying a person played them, and says a longer session has not been shown on this tree, so the lanes still read the 34.7 minutes played by hand at a median of 8.5 on its earlier one.",
-      "basis": "Project README: its own figures from one machine, not confirmed by anyone else. The lanes read one session played by hand on its earlier tree, with control given as the player's own observation; the new tree's figures are from 7-minute runs that the README calls play runs without saying a person played them",
+      "changed": "2026-11-27T16:11:00Z",
+      "status": "Its README (16:01 UTC on 27 November) says its tree, built on Vice-Tay's code, loads an open-world save and renders the city, at 8 to 12 frames a second (9.5 on average) in three 7-minute open-world sessions played by hand, with no panic or lost graphics device, and at around 9.5 in one 40-minute session played by hand with no crashes, on an RTX 3080 Ti at half render scale on the smaller console's profile, with 20 as the aim. At 15:48 UTC the README called that 40-minute session the player's observation, with no log kept and nothing measured, a caveat the 16:01 UTC version no longer has, so the lanes read it as the project's own report, which nobody else has confirmed.",
+      "basis": "Project README: its own figures from one machine, not confirmed by anyone else. The lanes read the new tree's 40-minute session played by hand, which the README first called the player's unmeasured observation",
       "tested": {
         "os": [
           "Windows"
@@ -1151,16 +1151,16 @@
       "lanes": {
         "picture": {
           "step": 2,
-          "text": "blocky on its earlier tree; cleaner on the new one in short runs"
+          "text": "lit night street, no white or black blocks; ray tracing off"
         },
         "speed": {
-          "low": 8.5,
-          "high": 8.5,
-          "text": "8.5 fps median over 34.7 minutes played on its earlier tree"
+          "low": 9.5,
+          "high": 9.5,
+          "text": "about 9.5 fps in a 40-minute session played by hand"
         },
         "stability": {
-          "minutes": 34,
-          "text": "34.7 minutes played by hand on its earlier tree"
+          "minutes": 40,
+          "text": "40-minute session played by hand on its new tree, no crashes"
         }
       }
     },
@@ -1438,8 +1438,8 @@
       "kind": "GTA VI recompilation toolchain",
       "stage": 5,
       "basis": "Project status page",
-      "status": "Shows every first-run screen, loads story mode and runs the opening scenes, with a world frame taking about 200 to 400 milliseconds. Its status page (13:31 UTC on 27 November) says geometry, normals and depth are right and that before post-processing a frame is a recognisable lit scene, with brightness bands that follow a packed underwater mask, that post-processing then makes it worse, with a black sky, flat banded colour, blur and a velocity target full of infinities, that the picture freezes on a white card while the game runs on behind it, because a GPU pass overwrites the start of a graphics heap that holds the quad the final composite draws, and that the NVIDIA device loss is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
-      "changed": "2026-11-27T14:05:00Z",
+      "status": "Shows every first-run screen, loads story mode and runs the opening scenes, with a world frame taking about 200 to 400 milliseconds. Its status page (15:43 UTC on 27 November) says geometry, normals and depth are right, that before post-processing a frame is a recognisable lit scene with brightness bands, that post-processing then makes it worse, that the picture no longer freezes on a white card because a translator bug that let a shadow program overwrite the start of a graphics heap is fixed, so the game now shows its first scene as live 3D that is still wrongly lit, with an orange, banded final frame covered in bars, and that the NVIDIA device loss is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
+      "changed": "2026-11-27T16:11:00Z",
       "tested": {
         "os": [
           "Windows"
@@ -1828,6 +1828,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T16:11:00Z",
+      "title": "victory-fork turns its own ray tracing on by default, and its lanes now read 8 to 11 frames a second",
+      "points": [
+        "victory-fork's README (16:01 UTC on 27 November) says the fork, now based on VIctory-NVIDIA, starts the game with its own ray tracing on by default and measures about 11 frames a second at 5,000 to 9,000 draws a frame and about 8 at 9,000 to 12,000 on an RTX 4070 at 1920x1080, against about 18 to 14 and 12.5 with it off.",
+        "This page now reads speed 8 to 11 (step 3), a session of 25 minutes run with ray tracing off and none reported with it on (step 2) and a picture at step 3, so the row moves from 12th to 18th, 3 steps short of the bar (was 2), and the 6 rows between each move up one place. The 17 frames a second this page read at 15:38 UTC came from a 25-minute session with VIctory-NVIDIA itself, which has ray tracing off by default.",
+        "The figures are the project's own, from one PC, and nobody else has confirmed them."
+      ]
+    },
     {
       "t": "2026-11-27T15:38:00Z",
       "title": "victory-fork moves to VIctory-NVIDIA's code and reports about 17 frames a second over 25 minutes",
