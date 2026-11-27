@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T19:49:00Z",
+  "checked": "2026-11-27T20:10:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -1037,8 +1037,8 @@
       "kind": "Fork of VIctory that brings victory-fork's, DexNom's and Belobug's work together, tuned on a Radeon RX 7900 XTX and published on 25 November",
       "stage": 6,
       "pos": 27,
-      "changed": "2026-11-27T19:04:00Z",
-      "status": "Its repository stopped answering by 17:59 UTC on 27 November, and PortWatch now lists it as offline and says it is not known whether GitHub or its owner removed it, with no published takedown notice naming it. Its README (20:29 UTC on 26 November) last aimed first at the larger console's picture at 4K output with ray tracing on and reported, for a city street of a title it does not name over runs of 270 seconds on a Radeon RX 7900 XTX with five renderer patches on, about 9 frames a second walking with ray tracing, 16 without it, 23 at 1080p output and 16 on the smaller console's profile, the patches still off by default while they were tested, against 13 to 17 before them, said trees dropping out and lighting swinging in lamp-lit rooms were fixed on 26 November and that models and textures stay at low detail for a long time while the title streams, and no longer listed the 41-minute session without a crash that it reported on 25 November, while PortWatch's owner says it verified an earlier build at about 16 on average and nobody else has reproduced it.",
+      "changed": "2026-11-27T20:10:00Z",
+      "status": "Its repository stopped answering by 17:59 UTC on 27 November, and PortWatch, which first listed it as offline with the cause not known, now says GitHub removed the repository and its owner's account for a Terms of Service violation, which PortWatch says it confirmed and GitHub publishes no notice of. Its README (20:29 UTC on 26 November) last aimed first at the larger console's picture at 4K output with ray tracing on and reported, for a city street of a title it does not name over runs of 270 seconds on a Radeon RX 7900 XTX with five renderer patches on, about 9 frames a second walking with ray tracing, 16 without it, 23 at 1080p output and 16 on the smaller console's profile, the patches still off by default while they were tested, against 13 to 17 before them, said trees dropping out and lighting swinging in lamp-lit rooms were fixed on 26 November and that models and textures stay at low detail for a long time while the title streams, and no longer listed the 41-minute session without a crash that it reported on 25 November, while PortWatch's owner says it verified an earlier build at about 16 on average and nobody else has reproduced it.",
       "basis": "Project README and findings notes as last read before its repository stopped answering: its own measurements on one machine. PortWatch says its owner verified the average; not reproduced by anyone else",
       "lanes": {
         "picture": {
@@ -1274,8 +1274,8 @@
       "repo": "halfwave50/VIctory-macOS-halfwave50",
       "kind": "Fork of VIctory-macOS for Apple Silicon Macs through Wine and Apple's D3DMetal, its own repository since 27 November",
       "stage": 6,
-      "status": "Its README (16:41 UTC on 27 November) says the world loads and gives player control, saved games load, and sunlight, shadows, room lighting and screen reflections are right, and reports 3.1 to 3.4 frames a second at the prison checkpoint, 3.0 at 1080p output, and 2.0 driving the boat, the median of a 9-minute play run at 1080p output, on a MacBook Pro M4 Pro with 48 GB, on the larger console's profile. It says the boat's 4.0 frames a second (4.9 at 1080p), and the earlier 4.7 and 6.0, were the cutscene that opens the boat mission and not driving, lists objects that flicker black for a frame, night streets and rooms flatter than on the console, one black patch on water and distant trees and buildings that appear 5 to 35 seconds late after a camera cut, says playable speed is not reached with a next goal of 5 and then 10 at 1080p, and relays eight other Macs' reports, from 0.2 to 4.1 frames a second, which this page does not read into a lane.",
-      "changed": "2026-11-27T17:39:00Z",
+      "status": "Its README (18:57 UTC on 27 November) says the world loads and gives player control, saved games load, and sunlight, shadows, room lighting and screen reflections are right, and reports 3.1 to 3.4 frames a second at the prison checkpoint, 3.0 at 1080p output, and 2.0 driving the boat, the median of a 9-minute play run at 1080p output, on a MacBook Pro M4 Pro with 48 GB, on the larger console's profile. It says the boat's 4.8 to 4.9 frames a second (4.9 at 1080p), and the earlier 4.7 and 6.0, were the cutscene that opens the boat mission and not driving, lists objects that flicker black for a frame, a controller that stopped responding soon after driving began in one play run, night streets and rooms flatter than on the console, one black patch on water and distant trees and buildings that appear 5 to 35 seconds late after a camera cut, says playable speed is not reached with a next goal of 5 and then 10 at 1080p, and relays ten other Macs' reports, from 0.2 to 4.1 frames a second, which this page does not read into a lane.",
+      "changed": "2026-11-27T20:10:00Z",
       "lanes": {
         "picture": {
           "step": 4,
@@ -1876,6 +1876,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T20:10:00Z",
+      "title": "PortWatch now says GitHub removed VIctory-7900XTX over its Terms of Service",
+      "points": [
+        "PortWatch, which listed VIctory-7900XTX as offline at 18:40 UTC on 27 November and said it was not known whether GitHub or its owner removed it, said at 19:38 UTC that GitHub removed the repository and its owner's account for a Terms of Service violation, as it says of VIctory-Belobug-AMD, and that it confirmed this.",
+        "GitHub publishes no notice of removals under its Terms of Service, so nothing here can check that; the repository still does not answer over git, and GitHub's public notice log, whose newest entry is from 25 November, names neither it nor VIctory-Belobug-AMD.",
+        "The row keeps the figures it last reported, from a README read before the repository stopped answering, and carries no link."
+      ]
+    },
     {
       "t": "2026-11-27T19:49:00Z",
       "title": "El1xr joins the watch list with a median of 23.5 frames a second from a short test run",
