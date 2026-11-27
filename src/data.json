@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T09:53:00Z",
+  "checked": "2026-11-27T10:23:00Z",
   "cadence_minutes": 15,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -1599,8 +1599,8 @@
       "kind": "Compatibility layer for Xbox Series games",
       "stage": 4,
       "basis": "Project README",
-      "status": "Presents its first frames about half a minute after starting a retail title it does not name. Its graphics device is sometimes lost during those frames, and nothing it draws has been seen.",
-      "changed": "2026-11-24T03:20:00Z",
+      "status": "Presents black frames at 30 frames a second from 3 seconds after starting a retail title it does not name, after building over 80,000 pipelines from translated shaders. Its README (09:56 UTC) says the title then faults in its own code between 10 seconds and 2 minutes in, and that nothing it draws is visible yet.",
+      "changed": "2026-11-27T10:23:00Z",
       "tested": {
         "os": [],
         "gpu": []
