@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T08:07:00Z",
+  "checked": "2026-11-27T08:17:00Z",
   "cadence_minutes": 15,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -406,9 +406,9 @@
       "repo": "vitutu1/victory-perf",
       "kind": "Fork of victory-fork aimed at frame rate, published on 25 November",
       "stage": 6,
-      "basis": "Project README as last read at 18:55 UTC on 25 November, before its repository stopped answering: the maintainer's own figures from one machine, not confirmed by anyone else",
-      "status": "Its repository stopped answering over git between 18:56 and 19:28 UTC on 25 November, with no published takedown notice naming it and the reason not known. Its README last reported the opening mission's interiors under player control at 9 to 14 frames a second on an RTX 4070 SUPER at reduced resolution and 4.5 to 6.5 in heavy scenes, figures from one machine that state no run length and that nobody else confirmed.",
-      "changed": "2026-11-25T19:34:00Z",
+      "basis": "Project README: the maintainer's own figures from one machine, not confirmed by anyone else",
+      "status": "Its README reports the opening mission's interiors under player control at 9 to 14 frames a second on an RTX 4070 SUPER at reduced resolution, and 4.5 to 6.5 in heavy scenes, with shadowed areas lit by stand-ins in place of the game's ray tracing. The figures come from one machine and state no run length, and nobody else has confirmed them.",
+      "changed": "2026-11-27T08:17:00Z",
       "lanes": {
         "picture": {
           "step": 3,
@@ -431,8 +431,7 @@
         "gpu": [
           "NVIDIA"
         ]
-      },
-      "nolink": true
+      }
     },
     {
       "pos": 8,
@@ -1202,10 +1201,10 @@
       "pos": 31,
       "name": "Scarlett fork",
       "repo": "Op-lite/victory-scarlett",
-      "kind": "Fork of the code PortWatch lists as CGBJ, with a local fork's work ported onto it; its repository no longer answers",
+      "kind": "Fork of the code PortWatch lists as CGBJ, with a local fork's work ported onto it",
       "stage": 6,
-      "status": "Its repository stopped answering over git between 02:43 and 08:01 UTC on 27 November, with no published takedown notice naming it and the reason not known. Its README, as last read at 02:43 UTC, said heavier scenes it plays by hand, a prison yard and the open world, ran at 16 to 21 frames a second and that driving in the open world dropped to 50 to 90 milliseconds a frame, on an RTX 4080 SUPER with a Ryzen 7 9800X3D at 1440p on the larger console's profile with ray tracing off, in a title it does not name, with no run length of play reported and its goal of a stable 30 not reached.",
-      "changed": "2026-11-27T08:07:00Z",
+      "status": "Its README (00:52 UTC) says heavier scenes it plays by hand, a prison yard and the open world, run at 16 to 21 frames a second and that driving in the open world drops lower, to 50 to 90 milliseconds a frame, on an RTX 4080 SUPER with a Ryzen 7 9800X3D at 1440p on the larger console's profile with ray tracing off, in a title it does not name. It also counts 8,300 to 9,400 frames in a fixed six-minute opening route on a diagnostics build, reports no run length of play, lists purple patches that linger for a few seconds and streaks on characters, and says its goal of a stable 30 is not reached.",
+      "changed": "2026-11-27T08:17:00Z",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1229,8 +1228,7 @@
           "NVIDIA"
         ]
       },
-      "basis": "Project README as last read at 02:43 UTC on 27 November, before its repository stopped answering: the maintainer's own figures from one machine, not confirmed by anyone else",
-      "nolink": true
+      "basis": "Project README, measured on one machine"
     },
     {
       "pos": 0,
@@ -1796,6 +1794,14 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T08:17:00Z",
+      "title": "victory-perf's repository answers again, and the Scarlett fork's mark is lifted",
+      "points": [
+        "victory-perf's repository answered over git again at 08:13 UTC on 27 November, after it stopped between 18:56 and 19:28 UTC on 25 November with no published takedown notice naming it. The reason is not known. Its README is unchanged since 05:26 UTC on 25 November and the only commits since this page last read it are two code changes dated 21:56 UTC that day, so its row keeps its figures and its link is back.",
+        "The Scarlett fork's repository failed four checks between 08:01 and 08:03 UTC and this page marked it as not answering at 08:09 UTC. It answered again at 08:10 UTC with the same newest commit, from 00:52 UTC, so the mark is lifted and its row is back as it stood."
+      ]
+    },
     {
       "t": "2026-11-27T05:56:00Z",
       "title": "victory-fork shows ray-traced shadows, at 0.2 to 3 frames a second",
