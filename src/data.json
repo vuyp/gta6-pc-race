@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T22:09:00Z",
+  "checked": "2026-11-27T22:47:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -272,8 +272,8 @@
       "kind": "Build of VIctory tested on an AMD Radeon card; its newest test build is based on the Neptune edition of VIctory",
       "stage": 6,
       "basis": "Project README, its test-build branch and its measuring tool: the maintainer's own figures from one machine in one session. The tool reads the layer's own frame lines and the measured settings use upscaling and no frame generation; not confirmed by anyone else",
-      "status": "Its README reports a test build, Lab 61, based on the Neptune edition of VIctory, in a session played with a controller on a Radeon RX 9070 XT on the smaller console's profile with upscaling: 37 minutes so far on foot and driving in the open world of a title it does not name, without a crash, at 14.0 frames a second on average and a median of 14.5, with freezes that take its lowest 1 percent of samples to about 0.4. It lists water surfaces and car glass that are not drawn, black mirrors and flickering shadows near trees, an earlier record of 77 minutes at about 5.2 on its previous build and a newer test build, Lab 63, that it says fixes dark faces in shade, and its README (12:17 UTC) also lists an unreleased AMD build at 21.8 frames a second on average over 60 minutes in the world without a crash (21.1 in a second run) and a released AMD build, v12, which it then called its stable version, at 16.4 to 18.5 in five-minute benchmarks and 16.9 over a 60-minute marathon run without a crash, all of them scripted or hands-off runs, which are not play and change no lane, and its README (13:11 UTC) adds that the unreleased build peaks at 30.3 frames a second at the top of the marathon and reaches up to 26 in a controller session while driving, which are peaks, not averages, and its README (20:13 UTC) now calls v26.11.1 its stable version, with a 5-minute certified benchmark at 30.2 frames a second with frame generation (16.0 without) and a line of 60 minutes of play without a crash that does not say how it was played, which no lane reads because its earlier README listed 60-minute runs as scripted or hands-off.",
-      "changed": "2026-11-27T20:44:00Z",
+      "status": "Its README reports a test build, Lab 61, based on the Neptune edition of VIctory, in a session played with a controller on a Radeon RX 9070 XT on the smaller console's profile with upscaling: 37 minutes so far on foot and driving in the open world of a title it does not name, without a crash, at 14.0 frames a second on average and a median of 14.5, with freezes that take its lowest 1 percent of samples to about 0.4. It lists water surfaces and car glass that are not drawn, black mirrors and flickering shadows near trees, an earlier record of 77 minutes at about 5.2 on its previous build and a newer test build, Lab 63, that it says fixes dark faces in shade, and its README (12:17 UTC) also lists an unreleased AMD build at 21.8 frames a second on average over 60 minutes in the world without a crash (21.1 in a second run) and a released AMD build, v12, which it then called its stable version, at 16.4 to 18.5 in five-minute benchmarks and 16.9 over a 60-minute marathon run without a crash, all of them scripted or hands-off runs, which are not play and change no lane, and its README (13:11 UTC) adds that the unreleased build peaks at 30.3 frames a second at the top of the marathon and reaches up to 26 in a controller session while driving, which are peaks, not averages, and its README (22:10 UTC) now calls v26.11.3 its stable version, lists crashes at launch and in the first minutes on some PCs among what it wants to improve, and keeps a 5-minute certified benchmark at 30.2 frames a second with frame generation (16.0 without) and a line of 60 minutes of play without a crash that does not say how it was played, which no lane reads because its earlier README listed 60-minute runs as scripted or hands-off.",
+      "changed": "2026-11-27T22:47:00Z",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1655,8 +1655,8 @@
       "kind": "Compatibility layer for Xbox Series games",
       "stage": 5,
       "basis": "Project README",
-      "status": "Shows the first screens of a retail title it does not name, an account prompt with its text and button glyphs drawn correctly and a full-screen background, at a steady 30 frames a second after frames that were black. Its README (21:33 UTC on 27 November) says the title ran for 5 minutes at that rate with memory use flat, and for 90 seconds with the host's graphics debug layer finding nothing, that a local user signed in to no service now gets it past the prompt and scripted input drives it without a person, that the intro video starts and the title then stops at a check in its streaming code, under study, and that no title is playable yet.",
-      "changed": "2026-11-27T21:42:00Z",
+      "status": "Shows the first screens of a retail title it does not name, an account prompt with its text and button glyphs drawn correctly and a full-screen background, at a steady 30 frames a second after frames that were black. Its README (22:38 UTC on 27 November) says the title ran for 5 minutes at that rate with memory use flat, and for 90 seconds with the host's graphics debug layer finding nothing, that a local user signed in to no service gets it past the prompt and scripted input drives it without a person, that past the start screen the title now loads and shows its first-run settings screens, running for minutes, with the earlier stop at a check in its streaming code no longer listed, that some glyphs of small text are missing and an occasional crash at start-up is open, and that no title is playable yet.",
+      "changed": "2026-11-27T22:47:00Z",
       "tested": {
         "os": [],
         "gpu": []
@@ -1877,6 +1877,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T22:47:00Z",
+      "title": "Holy-Interoperability's title now shows its first-run settings screens",
+      "points": [
+        "Holy-Interoperability, a compatibility layer for Xbox Series games, says in its README (22:38 UTC on 27 November) that past the start screen the retail title it does not name now loads and shows its first-run settings screens, running for minutes, and it no longer lists the stop at a check in its streaming code that its README (21:33 UTC) described.",
+        "It lists a fix to the order of a texture's levels in the console's tiled layout among the changes since, and some missing glyphs of small text and an occasional crash at start-up as open, and puts its overall progress at about 39 percent, from 37; it says no title is playable yet.",
+        "Its stage is unchanged at a recognisable picture, level with GTA6-BootTest and g6shim, because no scene of the game itself or player control is reported. The report is the project's own and unconfirmed."
+      ]
+    },
     {
       "t": "2026-11-27T21:42:00Z",
       "title": "Holy-Interoperability's title now gets past its account prompt",
