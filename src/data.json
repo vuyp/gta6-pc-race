@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T12:58:00Z",
+  "checked": "2026-11-27T13:30:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -272,8 +272,8 @@
       "kind": "Build of VIctory tested on an AMD Radeon card; its newest test build is based on the Neptune edition of VIctory",
       "stage": 6,
       "basis": "Project README, its test-build branch and its measuring tool: the maintainer's own figures from one machine in one session. The tool reads the layer's own frame lines and the measured settings use upscaling and no frame generation; not confirmed by anyone else",
-      "status": "Its README reports a test build, Lab 61, based on the Neptune edition of VIctory, in a session played with a controller on a Radeon RX 9070 XT on the smaller console's profile with upscaling: 37 minutes so far on foot and driving in the open world of a title it does not name, without a crash, at 14.0 frames a second on average and a median of 14.5, with freezes that take its lowest 1 percent of samples to about 0.4. It lists water surfaces and car glass that are not drawn, black mirrors and flickering shadows near trees, an earlier record of 77 minutes at about 5.2 on its previous build and a newer test build, Lab 63, that it says fixes dark faces in shade, and its README (12:17 UTC) also lists an unreleased AMD build at 21.8 frames a second on average over 60 minutes in the world without a crash (21.1 in a second run) and a released AMD build, v12, which it now calls its stable version, at 16.4 to 18.5 in five-minute benchmarks and 16.9 over a 60-minute marathon run without a crash, all of them scripted or hands-off runs, which are not play and change no lane.",
-      "changed": "2026-11-27T12:27:00Z",
+      "status": "Its README reports a test build, Lab 61, based on the Neptune edition of VIctory, in a session played with a controller on a Radeon RX 9070 XT on the smaller console's profile with upscaling: 37 minutes so far on foot and driving in the open world of a title it does not name, without a crash, at 14.0 frames a second on average and a median of 14.5, with freezes that take its lowest 1 percent of samples to about 0.4. It lists water surfaces and car glass that are not drawn, black mirrors and flickering shadows near trees, an earlier record of 77 minutes at about 5.2 on its previous build and a newer test build, Lab 63, that it says fixes dark faces in shade, and its README (12:17 UTC) also lists an unreleased AMD build at 21.8 frames a second on average over 60 minutes in the world without a crash (21.1 in a second run) and a released AMD build, v12, which it now calls its stable version, at 16.4 to 18.5 in five-minute benchmarks and 16.9 over a 60-minute marathon run without a crash, all of them scripted or hands-off runs, which are not play and change no lane, and its README (13:11 UTC) adds that the unreleased build peaks at 30.3 frames a second at the top of the marathon and reaches up to 26 in a controller session while driving, which are peaks, not averages.",
+      "changed": "2026-11-27T13:30:00Z",
       "lanes": {
         "picture": {
           "step": 3,
@@ -937,18 +937,18 @@
       "kind": "Fork of VIctory's code line for NVIDIA cards with 8 GB, documented in Portuguese; on 26 November it moved to a new base that its README does not name",
       "stage": 6,
       "pos": 23,
-      "changed": "2026-11-27T11:56:00Z",
-      "status": "Its README, now in English (03:33 UTC), says the prologue's prison section of a title it does not name is playable with the player in control on the smaller console's profile, and reports 24.0 frames a second on average over a scripted three-minute walk on an RTX 4060 Ti with 8 GB (22.9 when the walk starts 470 seconds after launch) and 21.2 in the opening cutscene. It reports no crash in more than 30 runs of 7 to 12 minutes and says long sessions are not measured yet, and it adds that a development branch plays the story on into the first open-world mission at about 20 to 22 frames a second, with the boat unlit, while its benchmarks files (09:28 and 11:33 UTC) now hold two community runs on laptop cards: about 12 minutes on an RTX 5070 Ti through the cutscenes and the first boat section, which averaged 9.6 frames a second with a median of 7.9, and about 6 minutes on an RTX 4060, at a median of 12.",
-      "basis": "Project README and benchmarks files: its own figures from one machine, from scripted walks, plus two community runs on other cards; not confirmed by anyone else",
+      "changed": "2026-11-27T13:30:00Z",
+      "status": "Its README (12:57 UTC on 27 November) says a title it does not name is playable with the player in control from the opening through the prologue's prison section and on into the first open-world mission, the boat, on the smaller console's profile, and reports 26.6 to 27.9 frames a second on average over a scripted three-minute walk in the prison, 28.7 to 29.1 over 70 seconds of the boat driven by a script and 25.6 in the opening cutscene, up from 24.0, 20 to 22 and 21.2 on 26 November, on one RTX 4060 Ti with 8 GB. It reports no crash or lost graphics device in more than a hundred runs of 4 to 12 minutes and says long sessions are not measured yet, and it says the opening's night scenes are darker than on the console and the boat ride has not been checked frame by frame, while its benchmarks files hold two community runs on laptop cards: about 12 minutes on an RTX 5070 Ti through the cutscenes and the first boat section, which averaged 9.6 frames a second with a median of 7.9, and about 6 minutes on an RTX 4060, at a median of 12.",
+      "basis": "Project README and benchmarks files: its own figures from one machine, from scripted runs (a prison walk and a throttle hold on the boat), plus two community runs on other cards; not confirmed by anyone else",
       "lanes": {
         "picture": {
           "step": 3,
-          "text": "shadow maps, faces, skin, hair; thick fog, no window glass"
+          "text": "shadows, faces, skin, hair, glass right; night scenes dark"
         },
         "speed": {
-          "low": 22.9,
-          "high": 24.0,
-          "text": "22.9 to 24.0 fps, scripted prison walk, smaller profile, 1080p"
+          "low": 26.6,
+          "high": 29.1,
+          "text": "26.6 to 29.1 fps, scripted prison walk and boat, smaller profile, 1080p"
         },
         "stability": {
           "minutes": 12,
@@ -1270,17 +1270,17 @@
       "repo": "halfwave50/VIctory-macOS-halfwave50",
       "kind": "Fork of VIctory-macOS for Apple Silicon Macs through Wine and Apple's D3DMetal, its own repository since 27 November",
       "stage": 6,
-      "status": "Its README (04:00 UTC on 27 November) says the world loads and gives player control, saved games load, and sunlight, shadows and room lighting are right, and reports 2.9 to 3.1 frames a second at the prison checkpoint and 4.5 on the boat on a MacBook Pro M4 Pro with 48 GB, on the larger console's profile, with 3.0 and 6.0 at 1080p output. It lists objects that flicker black for a frame, dark car interiors at night, black metal objects and one black patch on water, says playable speed is not reached with a next goal of 5 and then 10 at 1080p, and relays three other Macs' reports, from 0.25 to 3.8 frames a second, which this page does not read into a lane.",
-      "changed": "2026-11-27T04:51:00Z",
+      "status": "Its README (13:13 UTC on 27 November) says the world loads and gives player control, saved games load, and sunlight, shadows, room lighting and screen reflections are right, and reports 3.1 to 3.4 frames a second at the prison checkpoint and 4.7 on the boat on a MacBook Pro M4 Pro with 48 GB, on the larger console's profile, with 3.0 and 6.0 at 1080p output. It lists objects that flicker black for a frame, night streets and rooms flatter than on the console, one black patch on water and distant trees and buildings that appear 5 to 35 seconds late after a camera cut, says playable speed is not reached with a next goal of 5 and then 10 at 1080p, and relays six other Macs' reports, from 0.2 to 4.1 frames a second, which this page does not read into a lane.",
+      "changed": "2026-11-27T13:30:00Z",
       "lanes": {
         "picture": {
           "step": 4,
           "text": "sun, shadows and room light right; black flicker and patches"
         },
         "speed": {
-          "low": 2.9,
-          "high": 4.5,
-          "text": "2.9 to 3.1 fps at the prison checkpoint, 4.5 on the boat"
+          "low": 3.1,
+          "high": 4.7,
+          "text": "3.1 to 3.4 fps at the prison checkpoint, 4.7 on the boat"
         },
         "stability": {
           "minutes": null,
@@ -1700,7 +1700,7 @@
     {
       "name": "HybridGt",
       "repo": "LowBacon/HybridGt",
-      "note": "Engineering work that runs inside victory-fork, tested on an RTX 4070 Ti. Its README says it is not yet playable at a good frame rate: on a new game the intro, menus and opening render with whole characters at medians of 5.9 to 6.9 frames a second in the world with interiors lit. On 26 November it reports building the code PortWatch lists as CGBJ as published and measuring a median of 2.7 on the same PC on the smaller console's profile, the same for a combined build of the two, and says its own tree stays its build to play."
+      "note": "Engineering work that runs inside victory-fork, tested on an RTX 4070 Ti. Its README says it is not yet playable at a good frame rate: on a new game the intro, menus and opening render with whole characters at a median of 6.3 frames a second in the world, best 8.7, with victory-fork's newest work merged. On 26 November it reports building the code PortWatch lists as CGBJ as published and measuring a median of 2.7 on the same PC on the smaller console's profile, the same for a combined build of the two, and says its own tree stays its build to play."
     },
     {
       "name": "Sixth Star",
@@ -1795,6 +1795,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T13:30:00Z",
+      "title": "VI-BR-PORT reports 27 to 29 frames a second in scripted runs, boat included",
+      "points": [
+        "Its README (12:57 UTC) now reports 26.6 to 27.9 frames a second on average over a scripted three-minute walk in the prison and 28.7 to 29.1 over 70 seconds of the boat in the first open-world mission, driven by a script, on one RTX 4060 Ti with 8 GB, up from 24.0 and 20 to 22 on 26 November.",
+        "This page reads those scenes as its speed lane, 26.6 to 29.1 (step 5, as before), and keeps stability at 12 minutes, because the README reports no crash in more than a hundred runs of 4 to 12 minutes and says long sessions are not measured yet. Its place stays 3rd, 1 step short of the bar.",
+        "The figures are the project's own, from one PC, from scripted runs rather than play, and unconfirmed."
+      ]
+    },
     {
       "t": "2026-11-27T09:53:00Z",
       "title": "CBL VIctory reports 12 to 15 frames a second after moving to Vice-Tay's renderer",
