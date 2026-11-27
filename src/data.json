@@ -1,10 +1,10 @@
 {
-  "checked": "2026-11-27T22:47:00Z",
+  "checked": "2026-11-27T23:19:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
   "headline": "victory-fork shows the first gameplay scene under player control at a few frames a second",
-  "summary": "One project is counted as playable by its own report, and nobody else has checked it. Vice-Tay's documents describe one session of 30 minutes in the world, played by hand through a scripted gamepad, at a median of 21.1 frames a second on an RTX 4090 on the smaller console's profile; this page read it at 20:47 UTC and 21:22 UTC on 26 November. The first 4 minutes are cutscenes, the picture has faults and its README sets a goal of 30 and lists the frame time among its known problems. PortWatch calls Belobug's build very playable at about 22 on average with no crashes, with no session length, and VIctory-RDNA reports a capture of under ten minutes at medians of 19.1 to 23.1 at 4K output. klbf-lab's newest test build reports 37 minutes so far of play in the open world on a Radeon RX 9070 XT at 14.0 frames a second on average. VIctory-7900XTX reports a city street at about 22 with renderer patches that are off by default. Press reports of 26 November relay posts and videos that claim 25 to 30 for builds of CGBJ's code, and one says a packaged build is circulating; none gives a session length and none is verified. PortWatch still relays 25 for CGBJ itself, which it lists as a private build again since its repository stopped answering that morning, and outside runs of its published code measured 2.7 on its own settings and, with settings changed on an RTX 3080, 19.6 and later about 22 to 25. Playable needs 20 for 30 minutes in one session of play, reported as such.",
+  "summary": "One project is counted as playable by its own report, and nobody else has checked it. Vice-Tay's documents describe one session of 30 minutes in the world, played by hand through a scripted gamepad, at a median of 21.1 frames a second on an RTX 4090 on the smaller console's profile; this page read it at 20:47 UTC and 21:22 UTC on 26 November, and its README of 22:56 UTC on 27 November says development is paused until Monday 30 November. The first 4 minutes are cutscenes, the picture has faults and its README sets a goal of 30 and lists the frame time among its known problems. PortWatch calls Belobug's build very playable at about 22 on average with no crashes, with no session length, and VIctory-RDNA reports a capture of under ten minutes at medians of 19.1 to 23.1 at 4K output. klbf-lab's newest test build reports 37 minutes so far of play in the open world on a Radeon RX 9070 XT at 14.0 frames a second on average. VIctory-7900XTX reports a city street at about 22 with renderer patches that are off by default. Press reports of 26 November relay posts and videos that claim 25 to 30 for builds of CGBJ's code, and one says a packaged build is circulating; none gives a session length and none is verified. PortWatch still relays 25 for CGBJ itself, which it lists as a private build again since its repository stopped answering that morning, and outside runs of its published code measured 2.7 on its own settings and, with settings changed on an RTX 3080, 19.6 and later about 22 to 25. Playable needs 20 for 30 minutes in one session of play, reported as such.",
   "forecast": {
     "made": "2026-11-23T17:40:00Z",
     "target": "2026-11-27T00:00:00Z",
@@ -166,9 +166,9 @@
       "kind": "Fork of VIctory tuned on an RTX 4090, rebuilt on 26 November on the code PortWatch lists as CGBJ, itself VIctory-7900XTX with NVIDIA work on top. Published as victory-windows until 25 November",
       "stage": 7,
       "pos": 1,
-      "changed": "2026-11-27T12:27:00Z",
-      "status": "By its own report this is the first project at this page's playable bar: its README, test page and measurements page document one session on its RTX 4090 on the smaller console's profile, 30 minutes in the world of a title it does not name, played by hand, which its test page describes as pad inputs sent through a script while watching a capture after every move, from the prison through a boat section with three failed attempts picked up at checkpoints to an island on foot, at a median of 21.1 frames a second measured from the game's own frame lines. Nobody outside the project has checked it, the first 4 of the 30 minutes are cutscenes, its documents no longer say in words how the session ended, its README, rewritten on 27 November, sets its goal at 30 and lists the frame time, colour banding, flat-colour surfaces, blocky clouds and reflections and missing or incorrect shading among its known problems, and a Linux section added to that README at 07:14 UTC reports that on one RTX 5080 under Proton the opening area ran at about 20 frames a second, against 2.7 to 4 frames a second before a change on the Linux side, with no run length; its measurements page (12:00 UTC) also records a contributor's session of 1 hour 47 minutes on an RTX 5070, from launch to a manual close on a locally changed diagnostics build, with no frame rate and no statement that it was played, which this page does not count.",
-      "basis": "Project README, test page and measurements page, read at 20:47 UTC and 21:22 UTC on 26 November, again at 04:44 UTC on 27 November after the README was rewritten, and again at 07:17 UTC on 27 November after a Linux section was added, and again at 12:16 UTC after a contributor's session record was added to its measurements page: the maintainer's own figures from one machine, the README's Linux figure from an RTX 5080 and that contributor's RTX 5070 session as its measurements page records it, none confirmed by anyone else, and this page has run nothing itself. That the test runner ended the session is from an earlier version of its README and from its maintainer's comment on this page's tracker",
+      "changed": "2026-11-27T23:19:00Z",
+      "status": "By its own report this is the first project at this page's playable bar: its README, test page and measurements page document one session on its RTX 4090 on the smaller console's profile, 30 minutes in the world of a title it does not name, played by hand, which its test page describes as pad inputs sent through a script while watching a capture after every move, from the prison through a boat section with three failed attempts picked up at checkpoints to an island on foot, at a median of 21.1 frames a second measured from the game's own frame lines. Its README (22:56 UTC on 27 November) now says development is paused until Monday 30 November because the AI assistant behind its workflow reached its usage limit, nobody outside the project has checked the session, the first 4 of the 30 minutes are cutscenes, its documents no longer say in words how the session ended, its README, rewritten on 27 November, sets its goal at 30 and lists the frame time, colour banding, flat-colour surfaces, blocky clouds and reflections and missing or incorrect shading among its known problems, and a Linux section added to that README at 07:14 UTC reports that on one RTX 5080 under Proton the opening area ran at about 20 frames a second, against 2.7 to 4 frames a second before a change on the Linux side, with no run length; its measurements page (12:00 UTC) also records a contributor's session of 1 hour 47 minutes on an RTX 5070, from launch to a manual close on a locally changed diagnostics build, with no frame rate and no statement that it was played, which this page does not count, and its measurements page also gained at 22:55 UTC two short tests on its RTX 4090 on local builds, 40-second boat runs at 4K with upscaling and 2x frame generation (16.1 rendered frames a second on one build and 26.7 on the other) and a stationary 1080p test (22.6 to 26.4), which fill no lane.",
+      "basis": "Project README, test page and measurements page, read at 20:47 UTC and 21:22 UTC on 26 November, again at 04:44 UTC on 27 November after the README was rewritten, and again at 07:17 UTC on 27 November after a Linux section was added, and again at 12:16 UTC after a contributor's session record was added to its measurements page, and again at 23:17 UTC after a development pause notice and two short 4K tests were added: the maintainer's own figures from one machine, the README's Linux figure from an RTX 5080 and that contributor's RTX 5070 session as its measurements page records it, none confirmed by anyone else, and this page has run nothing itself. That the test runner ended the session is from an earlier version of its README and from its maintainer's comment on this page's tracker",
       "tested": {
         "os": [
           "Windows",
@@ -1493,16 +1493,17 @@
       "repo": "ubiquitarianism/leonida",
       "kind": "Continuation of Leonida, the halted GTA VI recompilation",
       "stage": 5,
-      "basis": "Project README and its Linux test report: the world frames are from one Linux machine with a Radeon RX 7900 XTX, and the earlier results from about 80 starts on a Linux machine and runs on a Windows machine",
-      "status": "Its Linux report of 26 November says one machine with a Radeon RX 7900 XTX drew the project's first frames of the world, a street at night and one at sunset with palm trees, cars and a character, during eight minutes in the world with no GPU hang, at roughly one frame every six seconds. Its README, last changed at 02:49 UTC, still says no frame of the world has been verified on any test machine and that nothing is playable, and nothing reports control in the world.",
-      "changed": "2026-11-26T14:58:00Z",
+      "basis": "Project README, its Linux test report and its status document: the world frames are from one Linux machine with a Radeon RX 7900 XTX, the setup screens from one Windows machine with an RTX 4060 Ti, and the earlier results from about 80 starts on a Linux machine and runs on a Windows machine",
+      "status": "Its Linux report of 26 November says one machine with a Radeon RX 7900 XTX drew the project's first frames of the world, a street at night and one at sunset with palm trees, cars and a character, during eight minutes in the world with no GPU hang, at roughly one frame every six seconds. Its README (22:50 UTC on 27 November) still says no frame of the world has been verified on any test machine and that nothing is playable, and a status document that came in with a second branch merged at that time, last changed on 26 November, says a Windows PC with an RTX 4060 Ti draws the title's setup screens and the loading screen's artwork at 30 frames a second, with the world past the start screen the first of its open items, so nothing reports control in the world.",
+      "changed": "2026-11-27T23:19:00Z",
       "tested": {
         "os": [
           "Windows",
           "Linux"
         ],
         "gpu": [
-          "AMD"
+          "AMD",
+          "NVIDIA"
         ]
       }
     },
@@ -1877,6 +1878,24 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T23:19:00Z",
+      "title": "Vice-Tay says development is paused until Monday",
+      "points": [
+        "Vice-Tay, the one project this page counts as playable by its own report, says in its README (22:56 UTC on 27 November) that development is paused until Monday 30 November because the AI assistant behind its workflow reached its usage limit.",
+        "Its measurements page also gained two short tests on its RTX 4090 (22:55 UTC): 40-second boat runs at 4K with upscaling and 2x frame generation on local builds, at 16.1 rendered frames a second on one build and 26.7 on the other, and a stationary 1080p test from 22.6 to 26.4. They are short runs on changed builds, so no lane or stage moves.",
+        "The 30-minute session at a median of 21.1 frames a second is still the one that counts against the playable bar, and nobody outside the project has checked it."
+      ]
+    },
+    {
+      "t": "2026-11-27T23:19:00Z",
+      "title": "Leonida Continued takes in a second branch",
+      "points": [
+        "Leonida Continued merged a second branch into its main at 22:50 UTC on 27 November: about 380 files of code, tools and documents, among them a status document last changed on 26 November.",
+        "That document says a Windows PC with an RTX 4060 Ti draws the title's setup screens and the loading screen's artwork at 30 frames a second, and lists the world past the start screen as its first open item.",
+        "Its README (22:50 UTC) is unchanged on the point that matters: nothing is playable and no frame of the world has been verified on any test machine, against its Linux report of one RX 7900 XTX machine drawing world frames at about one frame every six seconds. Its stage stays at a recognisable picture, and all of it is the project's own report, unconfirmed."
+      ]
+    },
     {
       "t": "2026-11-27T22:47:00Z",
       "title": "Holy-Interoperability's title now shows its first-run settings screens",
