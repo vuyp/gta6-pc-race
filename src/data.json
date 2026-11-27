@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T21:12:00Z",
+  "checked": "2026-11-27T21:42:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -1588,9 +1588,9 @@
       "repo": "Steinkoloss/port-of-the-americas",
       "kind": "Compatibility layer for Linux (Proton), for GTA VI only",
       "stage": 5,
-      "basis": "Project README, tested on one machine",
-      "status": "Its README reports the press-start screen, the first-time setup pages and loading-screen artwork drawing on Linux under Proton on a Radeon RX 9070 XT, with a button press starting the boot flow. It says the world load runs without a crash but the world draws black.",
-      "changed": "2026-11-25T10:59:00Z",
+      "basis": "Project README as last read, before its repository stopped answering, tested on one machine",
+      "status": "Its repository stopped answering by 21:03 UTC on 27 November, with no published takedown notice naming it and the reason not known. Its README (21:18 UTC on 24 November) last reported the press-start screen, the first-time setup pages and loading-screen artwork drawing on Linux through a compatibility layer on a Radeon RX 9070 XT, with a button press starting the boot flow, and said the world load ran without a crash but the world drew black.",
+      "changed": "2026-11-27T21:42:00Z",
       "tested": {
         "os": [
           "Linux"
@@ -1598,7 +1598,8 @@
         "gpu": [
           "AMD"
         ]
-      }
+      },
+      "nolink": true
     },
     {
       "pos": 42,
@@ -1654,8 +1655,8 @@
       "kind": "Compatibility layer for Xbox Series games",
       "stage": 5,
       "basis": "Project README",
-      "status": "Shows the first screen of a retail title it does not name, an account prompt with its text drawn correctly and a background that covers only half the screen, at a steady 30 frames a second after frames that were black. Its README (20:29 UTC on 27 November) says the title ran for 90 seconds, the longest it has tested so far, with the host's graphics debug layer finding nothing, that it waits at the prompt because nobody is signed in, that the device removals of its earlier runs came from a buffer view reaching past its buffer, which it now keeps inside, and that no title is playable yet.",
-      "changed": "2026-11-27T20:44:00Z",
+      "status": "Shows the first screens of a retail title it does not name, an account prompt with its text and button glyphs drawn correctly and a full-screen background, at a steady 30 frames a second after frames that were black. Its README (21:33 UTC on 27 November) says the title ran for 5 minutes at that rate with memory use flat, and for 90 seconds with the host's graphics debug layer finding nothing, that a local user signed in to no service now gets it past the prompt and scripted input drives it without a person, that the intro video starts and the title then stops at a check in its streaming code, under study, and that no title is playable yet.",
+      "changed": "2026-11-27T21:42:00Z",
       "tested": {
         "os": [],
         "gpu": []
@@ -1876,6 +1877,24 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T21:42:00Z",
+      "title": "Holy-Interoperability's title now gets past its account prompt",
+      "points": [
+        "Holy-Interoperability, a compatibility layer for Xbox Series games, says in its README (21:33 UTC on 27 November) that a local user signed in to no service now gets the retail title it does not name past its account prompt, that scripted input drives the title without a person and that its intro video starts, after which the title stops at a check in its streaming code, which is under study.",
+        "It also says the title ran for 5 minutes at a steady 30 frames a second with memory use flat, that the background of its first screen now fills the screen where it had covered half, and that its overall progress is about 37 percent, from 33; it says no title is playable yet.",
+        "Its stage is unchanged at a recognisable picture, level with GTA6-BootTest and g6shim, because no scene of the game itself or player control is reported. The report is the project's own and unconfirmed."
+      ]
+    },
+    {
+      "t": "2026-11-27T21:42:00Z",
+      "title": "Port of the Americas stops answering",
+      "points": [
+        "Its repository did not answer over git from here at 21:03 UTC on 27 November, after answering at 20:33, and did not answer again at 21:34 UTC, while every other linked repository answered.",
+        "PortWatch's data still lists it as a self-reported watchlist entry and does not say it is gone, the newest entry in GitHub's public notice log is from 25 November, and no reason has been reported.",
+        "The row keeps what its README last reported, a press-start screen and loading artwork on Linux with a black world, and now carries no link."
+      ]
+    },
     {
       "t": "2026-11-27T20:44:00Z",
       "title": "Holy-Interoperability's title now shows its first screen",
