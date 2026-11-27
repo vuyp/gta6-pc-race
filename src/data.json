@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T18:02:00Z",
+  "checked": "2026-11-27T18:37:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -306,9 +306,9 @@
       "repo": "Belobug/VIctory-Belobug-AMD",
       "kind": "Fork of VIctory for AMD Radeon cards, built on VIctory's main branch and its pull requests",
       "stage": 6,
-      "basis": "Project README on its main branch, tested on one machine, and PortWatch, whose owner reports having seen the build",
-      "status": "Its own README, on its main branch (20:56 UTC on 25 November), reports the world at 5 to 8 frames a second on a Radeon RX 9070 XT: 7.2 to 7.7 standing still in a scene of 8,800 draws and less while driving, lit with textures, people, vehicles, vegetation, water and sky, the game's own sun and lamp shadows, and a stand-in for ray-traced light that follows the game's sky by day and by night. The repository's default branch, the one GitHub opens, instead carries a version of VIctory-7900XTX's README, whose figures of about 22 frames a second in a city street are that project's own, while PortWatch, whose owner reports having seen the build, calls this fork very playable at about 22 on average with no crashes and no session length, notes that its main README has not caught up and relays a report of ray tracing working on AMD that the README does not bear out.",
-      "changed": "2026-11-27T09:17:00Z",
+      "basis": "Project README on its main branch as last read, before its repository stopped answering, and PortWatch, whose owner reports having seen the build and now lists it as private",
+      "status": "Its repository stopped answering by 17:59 UTC on 27 November, and PortWatch now lists it as a private build and relays the owner's account that a takedown notice was behind it, which PortWatch says it confirmed and which no published notice shows. Its own README, on its main branch (20:56 UTC on 25 November), last reported the world at 5 to 8 frames a second on a Radeon RX 9070 XT: 7.2 to 7.7 standing still in a scene of 8,800 draws and less while driving, lit with textures, people, vehicles, vegetation, water and sky, the game's own sun and lamp shadows, and a stand-in for ray-traced light that follows the game's sky by day and by night, while PortWatch, whose owner reports having seen the build, calls it very playable at about 22 on average with no crashes and no session length.",
+      "changed": "2026-11-27T18:37:00Z",
       "lanes": {
         "picture": {
           "step": 4,
@@ -331,7 +331,8 @@
         "gpu": [
           "AMD"
         ]
-      }
+      },
+      "nolink": true
     },
     {
       "pos": 5,
@@ -1036,9 +1037,9 @@
       "kind": "Fork of VIctory that brings victory-fork's, DexNom's and Belobug's work together, tuned on a Radeon RX 7900 XTX and published on 25 November",
       "stage": 6,
       "pos": 27,
-      "changed": "2026-11-26T20:56:00Z",
-      "status": "Its README (20:29 UTC) now aims first at the larger console's picture at 4K output with ray tracing on, and reports a city street of a title it does not name over runs of 270 seconds on a Radeon RX 7900 XTX with five renderer patches on: about 9 frames a second walking with ray tracing, 16 without it, 23 at 1080p output and 16 on the smaller console's profile; the patches are still off by default while they are tested, against 13 to 17 before them. It says trees dropping out and lighting swinging in lamp-lit rooms were fixed on 26 November and that models and textures stay at low detail for a long time while the title streams, and it no longer lists the 41-minute session without a crash that it reported on 25 November; PortWatch's owner says it verified an earlier build at about 16 on average, and nobody else has reproduced it.",
-      "basis": "Project README and findings notes: its own measurements on one machine. PortWatch says its owner verified the average; not reproduced by anyone else",
+      "changed": "2026-11-27T18:37:00Z",
+      "status": "Its repository stopped answering by 17:59 UTC on 27 November, with no published takedown notice naming it and the reason not known. Its README (20:29 UTC on 26 November) last aimed first at the larger console's picture at 4K output with ray tracing on and reported, for a city street of a title it does not name over runs of 270 seconds on a Radeon RX 7900 XTX with five renderer patches on, about 9 frames a second walking with ray tracing, 16 without it, 23 at 1080p output and 16 on the smaller console's profile, the patches still off by default while they were tested, against 13 to 17 before them, said trees dropping out and lighting swinging in lamp-lit rooms were fixed on 26 November and that models and textures stay at low detail for a long time while the title streams, and no longer listed the 41-minute session without a crash that it reported on 25 November, while PortWatch's owner says it verified an earlier build at about 16 on average and nobody else has reproduced it.",
+      "basis": "Project README and findings notes as last read before its repository stopped answering: its own measurements on one machine. PortWatch says its owner verified the average; not reproduced by anyone else",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1062,7 +1063,8 @@
         "gpu": [
           "AMD"
         ]
-      }
+      },
+      "nolink": true
     },
     {
       "name": "Vertex",
@@ -1137,9 +1139,9 @@
       "repo": "Fayberr/Victory-United",
       "kind": "Tree that folds work from VIctory forks into one, rebuilt on 26 November on Vice-Tay's code",
       "stage": 6,
-      "changed": "2026-11-27T16:38:00Z",
-      "status": "Its README (16:22 UTC on 27 November) says its tree, built on Vice-Tay's code, loads an open-world save and renders the city, at 8 to 12 frames a second (9.5 on average) in three 7-minute open-world sessions played by hand, with no panic or lost graphics device, and at around 9.5 in one 40-minute session played by hand with no crashes, on an RTX 3080 Ti at half render scale on the smaller console's profile, with 20 as the aim. It also reports a 36-minute open-world run of the same build averaging 10.0 over minutes 3 to 36 with no panic or lost-device line, which the lanes do not read because the README does not say it was played by hand; the 40-minute session was first called the player's unmeasured observation, and nobody else has confirmed any of it.",
-      "basis": "Project README: its own figures from one machine, not confirmed by anyone else. The lanes read the new tree's 40-minute session played by hand, which the README first called the player's unmeasured observation",
+      "changed": "2026-11-27T18:37:00Z",
+      "status": "Its README (17:58 UTC on 27 November) says its tree, built on Vice-Tay's code, loads an open-world save and renders the city, at 8 to 12 frames a second (9.5 on average) in three 7-minute open-world sessions played by hand, with no panic or lost graphics device, at around 9.5 in one 40-minute session played by hand with no crashes, and at an average of 10.0 over minutes 3 to 36 of a 36-minute open-world session played by hand with no panic or lost-device line, on an RTX 3080 Ti at half render scale on the smaller console's profile, with 20 as the aim. The 36-minute session was called a run until the README's change of 17:58 UTC, so the speed lane now reads its 10.0 and the stability lane the 40-minute session, which the README first called the player's unmeasured observation, and nobody else has confirmed any of it.",
+      "basis": "Project README: its own figures from one machine, not confirmed by anyone else. The speed lane reads the new tree's 36-minute session played by hand and the stability lane its 40-minute session, which the README first called the player's unmeasured observation",
       "tested": {
         "os": [
           "Windows"
@@ -1154,9 +1156,9 @@
           "text": "lit night street, no white or black blocks; ray tracing off"
         },
         "speed": {
-          "low": 9.5,
-          "high": 9.5,
-          "text": "about 9.5 fps in a 40-minute session played by hand"
+          "low": 10.0,
+          "high": 10.0,
+          "text": "10.0 fps in a 36-minute session played by hand"
         },
         "stability": {
           "minutes": 40,
@@ -1866,6 +1868,24 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T18:37:00Z",
+      "title": "Victory-United's 36-minute session is now said to be played by hand, and its speed lane reads 10.0",
+      "points": [
+        "Victory-United's README (17:58 UTC on 27 November) now says its 36-minute open-world session, which it had called a run, was played by hand: an average of 10.0 frames a second over minutes 3 to 36, with no panic or lost-device line in the log, on an RTX 3080 Ti at half render scale.",
+        "This page now reads speed 10.0 (step 4, where it read 9.5), the stability lane unchanged at 40 minutes (step 3) and the picture at step 2, so the row moves from 15th to 10th, 1 step short of the bar (was 2), and the 5 rows between each move down one place.",
+        "The figures are the project's own, from one PC, and nobody else has confirmed them."
+      ]
+    },
+    {
+      "t": "2026-11-27T18:37:00Z",
+      "title": "VIctory-Belobug-AMD and VIctory-7900XTX stop answering",
+      "points": [
+        "Neither repository answers over git from here: both were already failing at the 17:59 UTC check on 27 November and again at 18:28, 18:29, 18:30 and 18:34 UTC, while every other linked repository answered.",
+        "PortWatch now lists VIctory-Belobug-AMD as a private build and relays the owner's account that a takedown notice was behind it, which it says it confirmed; GitHub's public notice log, whose newest entry is from 25 November, names neither repository, and no reason has been reported for VIctory-7900XTX.",
+        "Both rows keep the figures they last reported, from README texts read before the repositories stopped answering, and now carry no link."
+      ]
+    },
     {
       "t": "2026-11-27T18:02:00Z",
       "title": "victory-fork reports about 15 frames a second in lighter scenes, and its lanes now read 8 to 15",
