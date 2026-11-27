@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T10:55:00Z",
+  "checked": "2026-11-27T11:28:00Z",
   "cadence_minutes": 15,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -272,8 +272,8 @@
       "kind": "Build of VIctory tested on an AMD Radeon card; its newest test build is based on the Neptune edition of VIctory",
       "stage": 6,
       "basis": "Project README, its test-build branch and its measuring tool: the maintainer's own figures from one machine in one session. The tool reads the layer's own frame lines and the measured settings use upscaling and no frame generation; not confirmed by anyone else",
-      "status": "Its README reports a test build, Lab 61, based on the Neptune edition of VIctory, in a session played with a controller on a Radeon RX 9070 XT on the smaller console's profile with upscaling: 37 minutes so far on foot and driving in the open world of a title it does not name, without a crash, at 14.0 frames a second on average and a median of 14.5, with freezes that take its lowest 1 percent of samples to about 0.4. It lists water surfaces and car glass that are not drawn, black mirrors and flickering shadows near trees, its earlier record is 77 minutes at about 5.2 on its previous build, and since 15:24 UTC it names a newer test build, Lab 63, that it says fixes dark faces in shade; its README now also points to a newer AMD test branch built on another fork, Scarlett fork, with a bench run at 16.3 on average on the larger profile, and neither that nor its earlier hands-off run at 14.3 is play or changes a lane.",
-      "changed": "2026-11-26T21:52:00Z",
+      "status": "Its README reports a test build, Lab 61, based on the Neptune edition of VIctory, in a session played with a controller on a Radeon RX 9070 XT on the smaller console's profile with upscaling: 37 minutes so far on foot and driving in the open world of a title it does not name, without a crash, at 14.0 frames a second on average and a median of 14.5, with freezes that take its lowest 1 percent of samples to about 0.4. It lists water surfaces and car glass that are not drawn, black mirrors and flickering shadows near trees, an earlier record of 77 minutes at about 5.2 on its previous build and a newer test build, Lab 63, that it says fixes dark faces in shade, and since 10:45 UTC it also lists an unreleased AMD build at 21.8 frames a second on average over 60 minutes in the world without a crash (21.1 in a second run) and a released AMD beta at 16.4 in a five-minute benchmark, all of them scripted or hands-off runs, which are not play and change no lane.",
+      "changed": "2026-11-27T11:28:00Z",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1599,8 +1599,8 @@
       "kind": "Compatibility layer for Xbox Series games",
       "stage": 4,
       "basis": "Project README",
-      "status": "Presents black frames at 30 frames a second from 3 seconds after starting a retail title it does not name, after building over 80,000 pipelines from translated shaders. Its README (10:49 UTC) says three stops in the title's first seconds are fixed and that it now stops at its own consistency check about 14 seconds in, with nothing it draws visible yet.",
-      "changed": "2026-11-27T10:55:00Z",
+      "status": "Presents black frames at 30 frames a second from 3 seconds after starting a retail title it does not name, after building over 80,000 pipelines from translated shaders. Its README (11:09 UTC) says five stops in the title's first seconds are fixed, that it now loads for about a minute and a half until the development host runs out of committed memory, that a gamepad and the keyboard are read and that its frames are still black.",
+      "changed": "2026-11-27T11:28:00Z",
       "tested": {
         "os": [],
         "gpu": []
@@ -1786,7 +1786,7 @@
     {
       "name": "Tequesta",
       "repo": "0v3rr/Tequesta",
-      "note": "A Rust compatibility layer and Direct3D 12 translation runtime for NVIDIA RTX cards on Windows, with its own settings overlay and native keyboard and mouse input, tested on an RTX A4500 with 28 GB of system memory. Its README reports full character movement in the opening scenes and 5 to 27 frames a second in 3D scenes with a performance option on, and gives no session length and no crash record."
+      "note": "A Rust compatibility layer and Direct3D 12 translation runtime for NVIDIA RTX cards on Windows, with its own settings overlay and native keyboard and mouse input, tested on an RTX A4500 with 28 GB of system memory. Its README (11:06 UTC) reports player control and camera movement in the game's prison section and about 8 to 9 frames a second on average at 1080p, with 2 to 14 in active 3D scenes, down from the 5 to 27 it listed earlier today. It gives no session length and no crash record, and it lists lighting and shadows as partial, static faces in cutscenes and skin artifacts."
     },
     {
       "name": "victory-rtx3060",
