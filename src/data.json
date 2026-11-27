@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T16:11:00Z",
+  "checked": "2026-11-27T16:17:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -1362,6 +1362,39 @@
       "basis": "Project README: the maintainer's own figures from one laptop, from scripted keyboard and mouse runs; not confirmed by anyone else"
     },
     {
+      "pos": 0,
+      "name": "VIctorious",
+      "repo": "randomguy12000/VIctorious",
+      "kind": "Fork of VIctory by way of VIctory-7900XTX, tuned for AMD RDNA 4 cards",
+      "stage": 6,
+      "status": "Its README on the 7900-base branch (16:13 UTC on 27 November) reports a title it does not name running with the player driving in the world on an RX 9070 XT with a Ryzen 7 9800X3D and 32 GB of RAM on the smaller console's profile, at about 38 milliseconds a frame, 26 frames a second, with lamps that can flicker and trees that can pop, or about 43, 23 frames a second, with stable lights, in scenes of 4,000 to 7,000 draws a frame, and at 15 to 17 frames a second on the larger console's profile, which it calls sharper and heavier. It lists a little geometry flicker, textures of roads and buildings that can be late or black while the game streams and frame generation that flickers at today's real frame rate, reports no run length or crash status for this fork, and sets a goal of a steady 30 frames a second that it says it has not reached; nobody else has confirmed any of it.",
+      "changed": "2026-11-27T16:17:00Z",
+      "lanes": {
+        "picture": {
+          "step": 3,
+          "text": "lit; lamps flicker, trees pop, road textures late or black"
+        },
+        "speed": {
+          "low": 23,
+          "high": 26,
+          "text": "about 23 to 26 fps driving, smaller console's profile"
+        },
+        "stability": {
+          "minutes": null,
+          "text": "no run length reported"
+        }
+      },
+      "tested": {
+        "os": [
+          "Windows"
+        ],
+        "gpu": [
+          "AMD"
+        ]
+      },
+      "basis": "Project README on its 7900-base branch: the maintainer's own figures from one PC, not confirmed by anyone else"
+    },
+    {
       "pos": 31,
       "name": "PercyScarlett",
       "repo": "rpatty-dev/PercyScarlett",
@@ -1828,6 +1861,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T16:17:00Z",
+      "title": "An AMD RDNA 4 fork reports about 23 to 26 frames a second while driving",
+      "points": [
+        "VIctorious, a fork of VIctory by way of VIctory-7900XTX tuned for AMD RDNA 4 cards, joins the table at stage 6 on a reader's request. Its README on the 7900-base branch (16:13 UTC on 27 November) reports driving in the world on an RX 9070 XT with a Ryzen 7 9800X3D and 32 GB of RAM on the smaller console's profile at about 38 milliseconds a frame, 26 frames a second, or about 43, 23 frames a second, and 15 to 17 frames a second on the larger console's profile.",
+        "This page reads speed 23 to 26 (step 5), no run length reported (step 0) and a picture that is lit but has flickering lamps, popping trees and late or black textures (step 3), so the row enters at 17th, 3 steps short of the bar. Its README sets a goal of a steady 30 frames a second and says it is not there yet.",
+        "The figures are the project's own, from one PC, and nobody else has confirmed them."
+      ]
+    },
     {
       "t": "2026-11-27T16:11:00Z",
       "title": "victory-fork turns its own ray tracing on by default, and its lanes now read 8 to 11 frames a second",
