@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T16:17:00Z",
+  "checked": "2026-11-27T16:38:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -1137,8 +1137,8 @@
       "repo": "Fayberr/Victory-United",
       "kind": "Tree that folds work from VIctory forks into one, rebuilt on 26 November on Vice-Tay's code",
       "stage": 6,
-      "changed": "2026-11-27T16:11:00Z",
-      "status": "Its README (16:01 UTC on 27 November) says its tree, built on Vice-Tay's code, loads an open-world save and renders the city, at 8 to 12 frames a second (9.5 on average) in three 7-minute open-world sessions played by hand, with no panic or lost graphics device, and at around 9.5 in one 40-minute session played by hand with no crashes, on an RTX 3080 Ti at half render scale on the smaller console's profile, with 20 as the aim. At 15:48 UTC the README called that 40-minute session the player's observation, with no log kept and nothing measured, a caveat the 16:01 UTC version no longer has, so the lanes read it as the project's own report, which nobody else has confirmed.",
+      "changed": "2026-11-27T16:38:00Z",
+      "status": "Its README (16:22 UTC on 27 November) says its tree, built on Vice-Tay's code, loads an open-world save and renders the city, at 8 to 12 frames a second (9.5 on average) in three 7-minute open-world sessions played by hand, with no panic or lost graphics device, and at around 9.5 in one 40-minute session played by hand with no crashes, on an RTX 3080 Ti at half render scale on the smaller console's profile, with 20 as the aim. It also reports a 36-minute open-world run of the same build averaging 10.0 over minutes 3 to 36 with no panic or lost-device line, which the lanes do not read because the README does not say it was played by hand; the 40-minute session was first called the player's unmeasured observation, and nobody else has confirmed any of it.",
       "basis": "Project README: its own figures from one machine, not confirmed by anyone else. The lanes read the new tree's 40-minute session played by hand, which the README first called the player's unmeasured observation",
       "tested": {
         "os": [
@@ -1858,6 +1858,11 @@
       "name": "victory-rtx3060",
       "repo": "Maykzera/victory-rtx3060",
       "note": "A fork of VIctory-NVIDIA for an RTX 3060 12 GB with a Ryzen 5 5600X, with measurements from 26 November. Its README headlines 14 to 17 frames a second in the open world after warming up, from scripted 6-minute runs averaging 13.6 to 15.0 with the character standing in one place, plus a 17-minute open-world stretch at 12 to 14 that it does not describe as played. It reports no session of play with a length, so it stays on the watch list."
+    },
+    {
+      "name": "VIctory-AMD-4K",
+      "repo": "elaboratecl/VIctory-AMD-4K",
+      "note": "A fork of VIctory for AMD RDNA2 cards with 16 GB of system memory, tested on a Radeon RX 6800 with a Ryzen 5 5600 at native 4K with ray tracing off. Its README reports full 3D gameplay with a gamepad and a mouse camera at 13.0 to 16.1 frames a second, with no graphics device timeouts across sessions of 10 minutes or more, from one PC. It gives no session length or average, so it stays here until a played session with one is reported."
     }
   ],
   "updates": [
