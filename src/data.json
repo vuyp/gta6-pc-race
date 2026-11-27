@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T16:38:00Z",
+  "checked": "2026-11-27T17:03:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -770,22 +770,22 @@
       "kind": "Fork of VIctory that now tunes Vice-Tay's renderer on an RTX 5080",
       "stage": 6,
       "pos": 18,
-      "changed": "2026-11-27T09:53:00Z",
-      "status": "Its README and results page (09:31 UTC) are rewritten around a tuning branch that runs Vice-Tay's renderer on an RTX 5080, and report roughly 12 to 15 frames a second in short gameplay reports at 1440p output on the larger console's profile, with medians of 12.2 and 12.3 over 19 and 9 reports of about five seconds when two builds are compared, against a target of 25. It says the blocky surfaces and white water reflections of earlier runs are gone, though shadows can still look almost black at times and some models show a magenta tint, and that its longest recorded session stays 65 minutes 46 seconds at 4K output on an earlier branch, closed by hand with no crash logged and stretches averaging 4.3 to 11.4 frames a second, while the 1440p figures come from separate short replays that have not been through an endurance run.",
-      "basis": "Project README and results page on its default branch: the maintainer's own figures from one machine, short 1440p reports and replays plus one 65-minute session on an earlier branch; not confirmed by anyone else",
+      "changed": "2026-11-27T17:03:00Z",
+      "status": "Its README and results page (16:45 UTC on 27 November) report a 72-minute 53-second session at 1440p output on an RTX 5080 with a Ryzen 9 9950X3D, played by hand with a controller from the start of the game through open-world driving and on-foot play, at a median of 14.5 frames a second with frame generation off and ending in a clean exit. It says only 59 of 678 reports of about five seconds in the 59 minutes after first control reached 20 or better, lists a pink tint now and then, very dark shadows in low light and hard-edged dark rectangles on water, and sets a target of 25; nobody else has confirmed any of it.",
+      "basis": "Project README and results page on its default branch: the maintainer's own figures from one machine, one 73-minute session played by hand on a reference build, not confirmed by anyone else",
       "lanes": {
         "picture": {
           "step": 3,
-          "text": "shadows almost black at times, magenta tint on some models"
+          "text": "pink tint, very dark low-light shadows, dark rectangles on water"
         },
         "speed": {
-          "low": 12,
-          "high": 15,
-          "text": "12 to 15 fps in short 1440p reports; medians 12.2 and 12.3"
+          "low": 14.5,
+          "high": 14.5,
+          "text": "median 14.5 in a 73-minute session played by hand, 1440p"
         },
         "stability": {
-          "minutes": 65,
-          "text": "65 minutes on an earlier branch, closed by hand, no crash"
+          "minutes": 72,
+          "text": "72 min 53 s played by hand, clean exit"
         }
       },
       "tested": {
@@ -1866,6 +1866,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T17:03:00Z",
+      "title": "CBL VIctory reports a 73-minute session played by hand at a median of 14.5 frames a second",
+      "points": [
+        "CBL VIctory's README and results page (16:45 UTC on 27 November) report a 72-minute 53-second session at 1440p output on an RTX 5080 with a Ryzen 9 9950X3D, played by hand with a controller from the start of the game through open-world driving and on-foot play, with frame generation off, at a median of 14.5 frames a second and ending in a clean exit.",
+        "This page now reads its speed lane as 14.5 (step 4, from 12 to 15) and its stability lane as 72 minutes (step 4, from 65 minutes on an earlier branch at 4K), with the picture lane still at step 3, so the row stays 1 step short of the bar and moves up to 5th, one place above klbf-lab. Its README lists a pink tint now and then, very dark shadows in low light and hard-edged dark rectangles on water, and sets a target of 25.",
+        "The figures are the project's own, from one machine, and nobody else has confirmed them."
+      ]
+    },
     {
       "t": "2026-11-27T16:17:00Z",
       "title": "An AMD RDNA 4 fork reports about 23 to 26 frames a second while driving",
