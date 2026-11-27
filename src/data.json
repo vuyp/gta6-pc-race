@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T14:05:00Z",
+  "checked": "2026-11-27T14:30:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -937,13 +937,13 @@
       "kind": "Fork of VIctory's code line for NVIDIA cards with 8 GB, documented in Portuguese; on 26 November it moved to a new base that its README does not name",
       "stage": 6,
       "pos": 23,
-      "changed": "2026-11-27T13:30:00Z",
-      "status": "Its README (12:57 UTC on 27 November) says a title it does not name is playable with the player in control from the opening through the prologue's prison section and on into the first open-world mission, the boat, on the smaller console's profile, and reports 26.6 to 27.9 frames a second on average over a scripted three-minute walk in the prison, 28.7 to 29.1 over 70 seconds of the boat driven by a script and 25.6 in the opening cutscene, up from 24.0, 20 to 22 and 21.2 on 26 November, on one RTX 4060 Ti with 8 GB. It reports no crash or lost graphics device in more than a hundred runs of 4 to 12 minutes and says long sessions are not measured yet, and it says the opening's night scenes are darker than on the console and the boat ride has not been checked frame by frame, while its benchmarks files hold two community runs on laptop cards: about 12 minutes on an RTX 5070 Ti through the cutscenes and the first boat section, which averaged 9.6 frames a second with a median of 7.9, and about 6 minutes on an RTX 4060, at a median of 12.",
+      "changed": "2026-11-27T14:30:00Z",
+      "status": "Its README (14:10 UTC on 27 November) says a title it does not name is playable with the player in control from the opening through the prologue's prison section and on into the first open-world mission, the boat, on the smaller console's profile, and reports 26.6 to 27.9 frames a second on average over a scripted three-minute walk in the prison, 28.7 to 29.1 over 70 seconds of the boat driven by a script and 25.6 in the opening cutscene, up from 24.0, 20 to 22 and 21.2 on 26 November, on one RTX 4060 Ti with 8 GB. It now reports one crash of the title four minutes into a run on 27 November, cause not found, besides no lost graphics device in more than a hundred runs of 4 to 12 minutes, says long sessions are not measured yet, and lists coloured squares on clothes and tattooed skin in some launches, soft textures for the first half minute of a scene and night scenes flatter than on the console, with the unlit boat and the black rectangles on the sea listed as fixed, while its benchmarks files hold two community runs on laptop cards: about 12 minutes on an RTX 5070 Ti through the cutscenes and the first boat section, which averaged 9.6 frames a second with a median of 7.9, and about 6 minutes on an RTX 4060, at a median of 12.",
       "basis": "Project README and benchmarks files: its own figures from one machine, from scripted runs (a prison walk and a throttle hold on the boat), plus two community runs on other cards; not confirmed by anyone else",
       "lanes": {
         "picture": {
           "step": 3,
-          "text": "shadows, faces, skin, hair, glass right; night scenes dark"
+          "text": "faces, glass right; squares on clothes sometimes, nights flat"
         },
         "speed": {
           "low": 26.6,
@@ -952,7 +952,7 @@
         },
         "stability": {
           "minutes": 12,
-          "text": "runs up to 12 minutes, no crash; an hour on its earlier base"
+          "text": "12 minutes; one crash 4 minutes in; an hour on earlier base"
         }
       },
       "tested": {
