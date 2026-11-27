@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T09:17:00Z",
+  "checked": "2026-11-27T09:53:00Z",
   "cadence_minutes": 15,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -767,25 +767,25 @@
     {
       "name": "CBL VIctory",
       "repo": "cocainebunnylaboratories/cblvictoryvi",
-      "kind": "Fork of VIctory with victory-fork's renderer and fixes from other forks",
+      "kind": "Fork of VIctory that now tunes Vice-Tay's renderer on an RTX 5080",
       "stage": 6,
       "pos": 18,
-      "changed": "2026-11-26T12:22:00Z",
-      "status": "Its README and results page (10:12 UTC), now on a new default branch, report a session of 65 minutes 46 seconds on an RTX 5080 at 4K output on the larger console's profile, from a checkpoint in the first chapter of a title it does not name through the boat sequence into open-world driving, on-foot play and manual saves, closed by hand with no crash or loss of the graphics device logged. Measured stretches of it averaged 11.4 frames a second with the boat underway, 4.7 in a late city stretch and 4.3 on foot, with a five-second window at 2.2, and it says the length includes loading and idle time, outdoor shadows are very dark, some surfaces show block artefacts and water reflections can look white.",
-      "basis": "Project README and results page on its default branch: the maintainer's own figures from one machine, not confirmed by anyone else",
+      "changed": "2026-11-27T09:53:00Z",
+      "status": "Its README and results page (09:31 UTC) are rewritten around a tuning branch that runs Vice-Tay's renderer on an RTX 5080, and report roughly 12 to 15 frames a second in short gameplay reports at 1440p output on the larger console's profile, with medians of 12.2 and 12.3 over 19 and 9 reports of about five seconds when two builds are compared, against a target of 25. It says the blocky surfaces and white water reflections of earlier runs are gone, though shadows can still look almost black at times and some models show a magenta tint, and that its longest recorded session stays 65 minutes 46 seconds at 4K output on an earlier branch, closed by hand with no crash logged and stretches averaging 4.3 to 11.4 frames a second, while the 1440p figures come from separate short replays that have not been through an endurance run.",
+      "basis": "Project README and results page on its default branch: the maintainer's own figures from one machine, short 1440p reports and replays plus one 65-minute session on an earlier branch; not confirmed by anyone else",
       "lanes": {
         "picture": {
-          "step": 2,
-          "text": "outdoor shadows very dark, block artefacts, white reflections"
+          "step": 3,
+          "text": "shadows almost black at times, magenta tint on some models"
         },
         "speed": {
-          "low": 4.32,
-          "high": 11.42,
-          "text": "4.3 to 11.4 fps by stretch at 4K output, a 5-second dip to 2.2"
+          "low": 12,
+          "high": 15,
+          "text": "12 to 15 fps in short 1440p reports; medians 12.2 and 12.3"
         },
         "stability": {
           "minutes": 65,
-          "text": "65 minutes, loading and idle time included, closed by hand"
+          "text": "65 minutes on an earlier branch, closed by hand, no crash"
         }
       },
       "tested": {
@@ -837,8 +837,8 @@
       "kind": "Xbox Series runtime for Windows built on VIctory and victory-fork, published on 25 November",
       "stage": 6,
       "pos": 20,
-      "changed": "2026-11-26T20:56:00Z",
-      "status": "Its README (20:53 UTC on 25 November) records a session it calls an external playtest, by a tester it does not name: 36 minutes 46 seconds without a crash on an RTX 4090 at 1440p, through the opening mission and the next of a title it does not name, at 10 frames a second on average and about 11 once the first ten minutes of loading were over, alongside its own measurements of about 10 rendered frames a second in typical views and 7 to 8 in its heaviest scenes at 4K output on an RTX 5080. It says about 7 percent of draws are dropped and that the tester's figures come from one session, and since 12:55 UTC on 26 November that a new memory layer, still in testing and not public, now runs in the open world, with the work it adds to each heavy frame down from about 18 seconds to about 60 milliseconds against a target of 5 milliseconds and no frame rate given, and since 17:54 UTC that native DirectX ray tracing works in the build under test; nobody else has confirmed any of it.",
+      "changed": "2026-11-27T09:53:00Z",
+      "status": "Its README (20:53 UTC on 25 November) records a session it calls an external playtest, by a tester it does not name: 36 minutes 46 seconds without a crash on an RTX 4090 at 1440p, through the opening mission and the next of a title it does not name, at 10 frames a second on average and about 11 once the first ten minutes of loading were over, alongside its own measurements of about 10 rendered frames a second in typical views and 7 to 8 in its heaviest scenes at 4K output on an RTX 5080. It says about 7 percent of draws are dropped and that the tester's figures come from one session, and its newest update (09:40 UTC on 27 November, which corrected a 09:34 line giving about 30 frames a second in the open world because those frames were loading screens) says a new memory layer, still in testing and not public, cuts the bookkeeping per heavy frame on recorded gameplay from about 18 seconds to about 5 milliseconds, locks loading screens and the intro at 30 frames a second, and leaves the card needing 22 milliseconds for an open-world frame with the game's data in video memory against about 140 for the copy loop, with no open-world frame rate given; nobody else has confirmed any of it.",
       "basis": "Project README and its measurement notes: its own figures from one machine, and one session on another that the README attributes to an unnamed external tester; not confirmed by anyone else",
       "lanes": {
         "picture": {
@@ -937,9 +937,9 @@
       "kind": "Fork of VIctory's code line for NVIDIA cards with 8 GB, documented in Portuguese; on 26 November it moved to a new base that its README does not name",
       "stage": 6,
       "pos": 23,
-      "changed": "2026-11-27T03:39:00Z",
-      "status": "Its README, now in English (03:33 UTC), says the prologue's prison section of a title it does not name is playable with the player in control on the smaller console's profile, and reports 24.0 frames a second on average over a scripted three-minute walk on an RTX 4060 Ti with 8 GB (22.9 when the walk starts 470 seconds after launch) and 21.2 in the opening cutscene. It reports no crash in more than 30 runs of 7 to 12 minutes and says long sessions are not measured yet, and it adds that a development branch plays the story on into the first open-world mission at about 20 to 22 frames a second, with the boat unlit.",
-      "basis": "Project README and benchmarks file: its own figures from one machine, from scripted walks, not confirmed by anyone else",
+      "changed": "2026-11-27T09:53:00Z",
+      "status": "Its README, now in English (03:33 UTC), says the prologue's prison section of a title it does not name is playable with the player in control on the smaller console's profile, and reports 24.0 frames a second on average over a scripted three-minute walk on an RTX 4060 Ti with 8 GB (22.9 when the walk starts 470 seconds after launch) and 21.2 in the opening cutscene. It reports no crash in more than 30 runs of 7 to 12 minutes and says long sessions are not measured yet, and it adds that a development branch plays the story on into the first open-world mission at about 20 to 22 frames a second, with the boat unlit, while its benchmarks file (09:28 UTC) now holds a community playthrough of about 12 minutes on an RTX 5070 Ti laptop card, through the cutscenes and the first boat section, that averaged 9.6 frames a second with a median of 7.9.",
+      "basis": "Project README and benchmarks file: its own figures from one machine, from scripted walks, plus one community playthrough on another card; not confirmed by anyone else",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1800,6 +1800,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T09:53:00Z",
+      "title": "CBL VIctory reports 12 to 15 frames a second after moving to Vice-Tay's renderer",
+      "points": [
+        "Its README and results page (09:31 UTC) now describe a tuning branch that runs Vice-Tay's renderer on an RTX 5080 and give roughly 12 to 15 frames a second in short gameplay reports at 1440p output, with medians of 12.2 and 12.3 when two builds are compared and a target of 25. They say the blocky surfaces and white reflections of earlier runs are gone, with shadows still almost black at times.",
+        "This page now reads the new branch: picture 3 (was 2) and speed 12 to 15 (step 4, was 4.3 to 11.4, step 3), with stability still 65 minutes (step 4) from a session on its earlier branch, because the README reports no session of play on the new one. The row moves from 14th to 5th, 1 step short of the bar (was 2), and the nine rows between each move down one place.",
+        "The figures are the project's own, from one PC, from short reports and replays rather than a session, and unconfirmed."
+      ]
+    },
     {
       "t": "2026-11-27T08:36:00Z",
       "title": "ScarlettPort reports 7 to 8 frames a second on its newest version",
