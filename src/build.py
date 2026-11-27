@@ -524,7 +524,7 @@ close_head = "Automatic checks are paused" if PAUSED else f"Standings checked ev
 TITLE = "GTA VI PC Race: live tracker of unofficial PC ports"
 DESC = (
     "How far each open-source project has got in running the Xbox build of GTA VI on a PC, "
-    + ("as of the last check before automatic checks were paused, " if PAUSED else "checked every 15 minutes, ")
+    + ("as of the last check before automatic checks were paused, " if PAUSED else f"checked every {esc(data['cadence_minutes'])} minutes, ")
     + ("and the first report of a playable session, by the project's own account." if MET else "with a best estimate of when it becomes playable.")
 )
 SITE = "https://vuyp.github.io/gta6-pc-race/"

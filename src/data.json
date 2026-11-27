@@ -1,6 +1,6 @@
 {
   "checked": "2026-11-27T12:27:00Z",
-  "cadence_minutes": 15,
+  "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
   "headline": "victory-fork shows the first gameplay scene under player control at a few frames a second",
@@ -3760,7 +3760,7 @@
     },
     {
       "label": "Who compiles it",
-      "text": "An AI assistant (Claude), automatically, about every 15 minutes. It can be wrong."
+      "text": "An AI assistant (Claude), automatically, about every 30 minutes. It can be wrong."
     },
     {
       "label": "Affiliation",
