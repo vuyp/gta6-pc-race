@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T17:03:00Z",
+  "checked": "2026-11-27T17:39:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -738,8 +738,8 @@
       "kind": "Xbox Series compatibility layer for Windows, published on 25 November",
       "stage": 6,
       "basis": "Project README: its own figures from unattended twelve-minute runs on one machine, not confirmed by anyone else",
-      "changed": "2026-11-27T16:11:00Z",
-      "status": "Its README (16:07 UTC on 27 November) marks the world as keeping running, with twelve minutes of the opening and twelve in the open world (mostly standing, with three short walks), both unattended, without a lost device, a log error or a driver timeout, says longer play is not measured, and says a first start on a PC that had never run the game (its issue 1, an RTX 5070 Ti) stood 30 seconds at the world's first frame before the game's own watchdog ended the run, and that a change now limits that wait to 12 seconds, reproduced and checked on its own RTX 5080 with an empty cache, where the limit was reached once, after 12.9 seconds without a frame, with no crash and 21 to 29 frames a second a minute later. It reports a median of 33 frames a second through the opening, 28 to 29 at 5,000 draws a frame and 25 at 9,000 in the open world on an RTX 5080 with a Ryzen 9 9950X3D on the smaller console's profile, says 30 is not held where the world is dense, still lists 26 console programs whose draws are dropped on 32-lane cards and textures that can appear late, and says the game is not playable yet.",
+      "changed": "2026-11-27T17:39:00Z",
+      "status": "Its README (17:03 UTC on 27 November) marks the world as keeping running, with twelve minutes of the opening and twelve in the open world (mostly standing, with three short walks), both unattended, without a lost device, a log error or a driver timeout, says longer play is not measured, and says a first start on a PC that had never run the game (its issue 1, an RTX 5070 Ti) stood 30 seconds at the world's first frame before the game's own watchdog ended the run, and that a change now limits that wait to 12 seconds, reproduced and checked on its own RTX 5080 with an empty cache, where the limit was reached once, after 12.9 seconds without a frame, with no crash and 21 to 29 frames a second a minute later. It reports a median of 33 frames a second through the opening, 28 to 29 at 5,000 draws a frame and 25 at 9,000 in the open world on an RTX 5080 with a Ryzen 9 9950X3D on the smaller console's profile, says 30 is not held where the world is dense, still lists 26 console programs whose draws are dropped on 32-lane cards and textures that can appear late, gives 22 frames a second at the median (17 at the lowest) walking and running through the town at 1080p, with no run length or word on how it was played, so the lanes do not read it, and says the game is not playable yet.",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1270,21 +1270,21 @@
       "repo": "halfwave50/VIctory-macOS-halfwave50",
       "kind": "Fork of VIctory-macOS for Apple Silicon Macs through Wine and Apple's D3DMetal, its own repository since 27 November",
       "stage": 6,
-      "status": "Its README (13:13 UTC on 27 November) says the world loads and gives player control, saved games load, and sunlight, shadows, room lighting and screen reflections are right, and reports 3.1 to 3.4 frames a second at the prison checkpoint and 4.7 on the boat on a MacBook Pro M4 Pro with 48 GB, on the larger console's profile, with 3.0 and 6.0 at 1080p output. It lists objects that flicker black for a frame, night streets and rooms flatter than on the console, one black patch on water and distant trees and buildings that appear 5 to 35 seconds late after a camera cut, says playable speed is not reached with a next goal of 5 and then 10 at 1080p, and relays six other Macs' reports, from 0.2 to 4.1 frames a second, which this page does not read into a lane.",
-      "changed": "2026-11-27T13:30:00Z",
+      "status": "Its README (16:41 UTC on 27 November) says the world loads and gives player control, saved games load, and sunlight, shadows, room lighting and screen reflections are right, and reports 3.1 to 3.4 frames a second at the prison checkpoint, 3.0 at 1080p output, and 2.0 driving the boat, the median of a 9-minute play run at 1080p output, on a MacBook Pro M4 Pro with 48 GB, on the larger console's profile. It says the boat's 4.0 frames a second (4.9 at 1080p), and the earlier 4.7 and 6.0, were the cutscene that opens the boat mission and not driving, lists objects that flicker black for a frame, night streets and rooms flatter than on the console, one black patch on water and distant trees and buildings that appear 5 to 35 seconds late after a camera cut, says playable speed is not reached with a next goal of 5 and then 10 at 1080p, and relays eight other Macs' reports, from 0.2 to 4.1 frames a second, which this page does not read into a lane.",
+      "changed": "2026-11-27T17:39:00Z",
       "lanes": {
         "picture": {
           "step": 4,
           "text": "sun, shadows and room light right; black flicker and patches"
         },
         "speed": {
-          "low": 3.1,
-          "high": 4.7,
-          "text": "3.1 to 3.4 fps at the prison checkpoint, 4.7 on the boat"
+          "low": 2.0,
+          "high": 3.4,
+          "text": "2.0 fps driving the boat, 3.1 to 3.4 at the prison checkpoint"
         },
         "stability": {
           "minutes": null,
-          "text": "no run length reported"
+          "text": "9-minute play run reported, no crash statement"
         }
       },
       "tested": {
@@ -1867,11 +1867,20 @@
   ],
   "updates": [
     {
+      "t": "2026-11-27T17:39:00Z",
+      "title": "The Mac project corrects its boat speed to about 2 frames a second",
+      "points": [
+        "VIctory-macOS-halfwave50's README (16:41 UTC on 27 November) now gives two boat figures: driving the boat in play ran at 2.0 frames a second, the median of a 9-minute play run at 1080p output on a MacBook Pro M4 Pro, and the 4.0 (4.9 at 1080p) it gave for the boat is the cutscene that opens the mission, as were the earlier 4.7 and 6.0.",
+        "This page now reads its speed lane as 2.0 to 3.4, from 2.0 driving the boat and 3.1 to 3.4 at the prison checkpoint (still step 2; it read 3.1 to 4.7 before), and its stability lane stays at step 0 because the README gives no crash statement for the 9-minute run, so the row stays at 33rd, 6 steps short of the bar.",
+        "The figures are the project's own, from one Mac, and nobody else has confirmed them."
+      ]
+    },
+    {
       "t": "2026-11-27T17:03:00Z",
       "title": "CBL VIctory reports a 73-minute session played by hand at a median of 14.5 frames a second",
       "points": [
         "CBL VIctory's README and results page (16:45 UTC on 27 November) report a 72-minute 53-second session at 1440p output on an RTX 5080 with a Ryzen 9 9950X3D, played by hand with a controller from the start of the game through open-world driving and on-foot play, with frame generation off, at a median of 14.5 frames a second and ending in a clean exit.",
-        "This page now reads its speed lane as 14.5 (step 4, from 12 to 15) and its stability lane as 72 minutes (step 4, from 65 minutes on an earlier branch at 4K), with the picture lane still at step 3, so the row stays 1 step short of the bar and moves up to 5th, one place above klbf-lab. Its README lists a pink tint now and then, very dark shadows in low light and hard-edged dark rectangles on water, and sets a target of 25.",
+        "This page now reads its speed lane as 14.5 (step 4, where it read 12 to 15 before) and its stability lane as 72 minutes (step 4, where it read 65 minutes on an earlier branch at 4K before), with the picture lane still at step 3, so the row stays 1 step short of the bar and moves up to 5th, one place above klbf-lab. Its README lists a pink tint now and then, very dark shadows in low light and hard-edged dark rectangles on water, and sets a target of 25.",
         "The figures are the project's own, from one machine, and nobody else has confirmed them."
       ]
     },
