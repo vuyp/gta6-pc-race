@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T08:36:00Z",
+  "checked": "2026-11-27T09:17:00Z",
   "cadence_minutes": 15,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -306,9 +306,9 @@
       "repo": "Belobug/VIctory-Belobug-AMD",
       "kind": "Fork of VIctory for AMD Radeon cards, built on VIctory's main branch and its pull requests",
       "stage": 6,
-      "basis": "Project README, tested on one machine, and PortWatch, whose owner reports having seen the build",
-      "status": "Its README now reports the world at 5 to 8 frames a second on a Radeon RX 9070 XT: 7.2 to 7.7 standing still in a scene of 8,800 draws and less while driving, lit with textures, people, vehicles, vegetation, water and sky, the game's own sun and lamp shadows, and a stand-in for ray-traced light that now follows the game's sky by day and by night. PortWatch, whose owner reports having seen the build, now calls it very playable at about 22 frames a second on average with no crashes, without a session length, and notes that this README has not caught up; it also relays a report of ray tracing working on AMD that this README does not yet bear out.",
-      "changed": "2026-11-26T20:56:00Z",
+      "basis": "Project README on its main branch, tested on one machine, and PortWatch, whose owner reports having seen the build",
+      "status": "Its own README, on its main branch (20:56 UTC on 25 November), reports the world at 5 to 8 frames a second on a Radeon RX 9070 XT: 7.2 to 7.7 standing still in a scene of 8,800 draws and less while driving, lit with textures, people, vehicles, vegetation, water and sky, the game's own sun and lamp shadows, and a stand-in for ray-traced light that follows the game's sky by day and by night. The repository's default branch, the one GitHub opens, instead carries a version of VIctory-7900XTX's README, whose figures of about 22 frames a second in a city street are that project's own, while PortWatch, whose owner reports having seen the build, calls this fork very playable at about 22 on average with no crashes and no session length, notes that its main README has not caught up and relays a report of ray tracing working on AMD that the README does not bear out.",
+      "changed": "2026-11-27T09:17:00Z",
       "lanes": {
         "picture": {
           "step": 4,
@@ -1169,16 +1169,17 @@
       "repo": "XaviFortes/VIctory-RDNA",
       "stage": 6,
       "kind": "Fork of VIctory-7900XTX tuned for AMD's Radeon RX 7000 cards",
-      "basis": "Project README: its own figures from one machine in one session, with the time played given as its maintainer's estimate. Until 12:54 UTC on 26 November the same README said time under player control was unverified for this run. Not confirmed by anyone else",
-      "status": "Its README (17:07 UTC) reports a capture of 9 minutes 38 seconds on its default preset on a Radeon RX 7900 XT at 4K output on the larger console's profile, closed by its maintainer without a crash, with medians of 23.1 frames a second across 101 gameplay samples and 19.1 in heavy scenes, rendered frames only. It does not say that capture was played by hand, its 40 minutes or so of hands-on play were on earlier builds at about 12, and it says some draws are still dropped.",
-      "changed": "2026-11-26T21:22:00Z",
+      "basis": "Project README: its own figures from one machine in two captures, with the time played on earlier builds given as its maintainer's estimate. Until 12:54 UTC on 26 November the same README said time under player control was unverified for that run. Not confirmed by anyone else",
+      "status": "Its README (08:48 UTC) reports a continuous capture of 23 minutes 50 seconds on its default preset on a Radeon RX 7900 XT at 4K output on the larger console's profile, with a clean exit, at medians of 20.8 frames a second across 260 gameplay samples and 20.3 in 144 heavy-scene samples, rendered frames only, after a capture of 9 minutes 38 seconds at 23.1 and 19.1. It does not say the new capture was played by hand, it puts its 40 minutes or so of hands-on play on earlier builds and lists a hands-on run of 30 minutes or more on the current build as next, and it says a small number of draws are still dropped, while a contributor's RTX 5070 report in its repository gives 1.6 to 2.4 frames a second at 4K.",
+      "changed": "2026-11-27T09:17:00Z",
       "pos": 0,
       "tested": {
         "os": [
           "Windows"
         ],
         "gpu": [
-          "AMD"
+          "AMD",
+          "NVIDIA"
         ]
       },
       "lanes": {
@@ -1189,7 +1190,7 @@
         "speed": {
           "low": 19.1,
           "high": 23.1,
-          "text": "19.1 to 23.1 fps medians in one capture under 10 minutes, 4K"
+          "text": "19.1 to 23.1 fps medians in captures of 9 min 38 s and 23 min 50 s, 4K"
         },
         "stability": {
           "minutes": 40,
@@ -1404,8 +1405,8 @@
       "kind": "GTA VI recompilation toolchain",
       "stage": 5,
       "basis": "Project status page",
-      "status": "Shows every first-run screen, loads story mode and runs the opening scenes. Its status page (08:00 UTC) says geometry, normals and depth are right and surface colour is right for most surfaces, that a batch of translator changes is merged, so shaders are translated and compiled again on the next run, that the lighting pass shades its pixels on a branch that is not on main yet while the final frame is still banded, full of black holes, half black and blurred, at about 200 to 400 milliseconds a world frame, and that the NVIDIA device loss about 10 minutes in is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
-      "changed": "2026-11-27T08:36:00Z",
+      "status": "Shows every first-run screen, loads story mode and runs the opening scenes, with a world frame taking about 200 to 400 milliseconds. Its status page (08:47 UTC) says geometry, normals and depth are right, that the lighting pass now shades its pixels so that before post-processing a frame is a recognisable lit scene with brightness bands and some black blocks, that post-processing then makes it worse with a black sky, flat banded colour and blur, that the game stalls on a loading card after the intro, and that the NVIDIA device loss is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
+      "changed": "2026-11-27T09:17:00Z",
       "tested": {
         "os": [
           "Windows"
