@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T07:52:00Z",
+  "checked": "2026-11-27T08:07:00Z",
   "cadence_minutes": 15,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -1202,10 +1202,10 @@
       "pos": 31,
       "name": "Scarlett fork",
       "repo": "Op-lite/victory-scarlett",
-      "kind": "Fork of the code PortWatch lists as CGBJ, with a local fork's work ported onto it",
+      "kind": "Fork of the code PortWatch lists as CGBJ, with a local fork's work ported onto it; its repository no longer answers",
       "stage": 6,
-      "status": "Its README (00:52 UTC) says heavier scenes it plays by hand, a prison yard and the open world, run at 16 to 21 frames a second and that driving in the open world drops lower, to 50 to 90 milliseconds a frame, on an RTX 4080 SUPER with a Ryzen 7 9800X3D at 1440p on the larger console's profile with ray tracing off, in a title it does not name. It also counts 8,300 to 9,400 frames in a fixed six-minute opening route on a diagnostics build, reports no run length of play, lists purple patches that linger for a few seconds and streaks on characters, and says its goal of a stable 30 is not reached.",
-      "changed": "2026-11-27T02:18:00Z",
+      "status": "Its repository stopped answering over git between 02:43 and 08:01 UTC on 27 November, with no published takedown notice naming it and the reason not known. Its README, as last read at 02:43 UTC, said heavier scenes it plays by hand, a prison yard and the open world, ran at 16 to 21 frames a second and that driving in the open world dropped to 50 to 90 milliseconds a frame, on an RTX 4080 SUPER with a Ryzen 7 9800X3D at 1440p on the larger console's profile with ray tracing off, in a title it does not name, with no run length of play reported and its goal of a stable 30 not reached.",
+      "changed": "2026-11-27T08:07:00Z",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1229,7 +1229,8 @@
           "NVIDIA"
         ]
       },
-      "basis": "Project README, measured on one machine"
+      "basis": "Project README as last read at 02:43 UTC on 27 November, before its repository stopped answering: the maintainer's own figures from one machine, not confirmed by anyone else",
+      "nolink": true
     },
     {
       "pos": 0,
