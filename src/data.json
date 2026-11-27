@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T17:39:00Z",
+  "checked": "2026-11-27T18:02:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -202,17 +202,17 @@
       "kind": "Fork of VIctory, formerly named victory-gta6; based on VIctory-NVIDIA since 27 November, with ray tracing work of its own",
       "stage": 6,
       "basis": "Project README: the maintainer's own figures from one PC, not confirmed by anyone else; the rest of its README is VIctory-NVIDIA's text, which this row does not read",
-      "status": "Its README (16:01 UTC on 27 November) says this fork, now based on VIctory-NVIDIA, starts the game with its own ray tracing on by default, calls that work in progress and measures about 11 frames a second at 5,000 to 9,000 draws a frame and about 8 at 9,000 to 12,000 on an RTX 4070 at 1920x1080, against about 18 to 14 and 12.5 with it off, with the water's own light still left out on cards with 32-lane waves. A 25-minute play session at 2560x1440 that averaged about 17 frames a second was run with VIctory-NVIDIA itself, which has ray tracing off by default, and the README gives no crash status for it, so the lanes read the ray-tracing figures of 8 to 11 frames a second and keep the 25 minutes, flagged as run with it off.",
-      "changed": "2026-11-27T16:11:00Z",
+      "status": "Its README (17:52 UTC on 27 November) says this fork, now based on VIctory-NVIDIA, starts the game with its own ray tracing on by default, calls that work in progress and measures, in one play session on an RTX 4070 at 1920x1080, about 15 frames a second at 3,000 to 5,000 draws a frame and about 8 at 5,000 to 12,000, with the water's light on 32-lane cards now switched on and foam on the water still drawn dark. A 25-minute play session at 2560x1440 that averaged about 17 frames a second was run with VIctory-NVIDIA itself, which has ray tracing off by default, and the README gives no crash status for it, so the lanes read the ray-tracing figures of 8 to 15 frames a second and keep the 25 minutes, flagged as run with it off.",
+      "changed": "2026-11-27T18:02:00Z",
       "lanes": {
         "picture": {
           "step": 3,
-          "text": "ray tracing on and unfinished; the water's own light left out"
+          "text": "ray tracing on and unfinished; water foam dark, ray pages can lag"
         },
         "speed": {
           "low": 8,
-          "high": 11,
-          "text": "about 8 to 11 fps with ray tracing on, its default, at 1920x1080"
+          "high": 15,
+          "text": "about 8 to 15 fps with ray tracing on, its default, at 1920x1080"
         },
         "stability": {
           "minutes": 25,
@@ -1866,6 +1866,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T18:02:00Z",
+      "title": "victory-fork reports about 15 frames a second in lighter scenes, and its lanes now read 8 to 15",
+      "points": [
+        "victory-fork's README (17:52 UTC on 27 November) now measures its default ray tracing, in one play session on an RTX 4070 at 1920x1080, at about 15 frames a second at 3,000 to 5,000 draws a frame and about 8 at 5,000 to 12,000, where it read about 11 at 5,000 to 9,000 and 8 at 9,000 to 12,000 at 16:01 UTC, and says the water's light on 32-lane cards is now switched on, with foam on the water still drawn dark.",
+        "This page now reads speed 8 to 15 (step 4, where it read 8 to 11), the stability lane unchanged at 25 minutes run with ray tracing off (step 2) and the picture still at step 3, so the row moves from 19th to 12th, 2 steps short of the bar (was 3), and the 7 rows between each move down one place.",
+        "The figures are the project's own, from one PC, and nobody else has confirmed them."
+      ]
+    },
     {
       "t": "2026-11-27T17:39:00Z",
       "title": "The Mac project corrects its boat speed to about 2 frames a second",
