@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T18:37:00Z",
+  "checked": "2026-11-27T19:04:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -306,9 +306,9 @@
       "repo": "Belobug/VIctory-Belobug-AMD",
       "kind": "Fork of VIctory for AMD Radeon cards, built on VIctory's main branch and its pull requests",
       "stage": 6,
-      "basis": "Project README on its main branch as last read, before its repository stopped answering, and PortWatch, whose owner reports having seen the build and now lists it as private",
-      "status": "Its repository stopped answering by 17:59 UTC on 27 November, and PortWatch now lists it as a private build and relays the owner's account that a takedown notice was behind it, which PortWatch says it confirmed and which no published notice shows. Its own README, on its main branch (20:56 UTC on 25 November), last reported the world at 5 to 8 frames a second on a Radeon RX 9070 XT: 7.2 to 7.7 standing still in a scene of 8,800 draws and less while driving, lit with textures, people, vehicles, vegetation, water and sky, the game's own sun and lamp shadows, and a stand-in for ray-traced light that follows the game's sky by day and by night, while PortWatch, whose owner reports having seen the build, calls it very playable at about 22 on average with no crashes and no session length.",
-      "changed": "2026-11-27T18:37:00Z",
+      "basis": "Project README on its main branch as last read, before its repository stopped answering, and PortWatch, whose owner reports having seen the build and now says GitHub removed it",
+      "status": "Its repository stopped answering by 17:59 UTC on 27 November, and PortWatch, which first relayed a takedown notice, now says GitHub removed the repository and its owner's account for a Terms of Service violation, which PortWatch says it confirmed and GitHub publishes no notice of. Its own README, on its main branch (20:56 UTC on 25 November), last reported the world at 5 to 8 frames a second on a Radeon RX 9070 XT: 7.2 to 7.7 standing still in a scene of 8,800 draws and less while driving, lit with textures, people, vehicles, vegetation, water and sky, the game's own sun and lamp shadows, and a stand-in for ray-traced light that follows the game's sky by day and by night, while PortWatch, whose owner reports having seen the build, calls it very playable at about 22 on average with no crashes and no session length.",
+      "changed": "2026-11-27T19:04:00Z",
       "lanes": {
         "picture": {
           "step": 4,
@@ -1037,8 +1037,8 @@
       "kind": "Fork of VIctory that brings victory-fork's, DexNom's and Belobug's work together, tuned on a Radeon RX 7900 XTX and published on 25 November",
       "stage": 6,
       "pos": 27,
-      "changed": "2026-11-27T18:37:00Z",
-      "status": "Its repository stopped answering by 17:59 UTC on 27 November, with no published takedown notice naming it and the reason not known. Its README (20:29 UTC on 26 November) last aimed first at the larger console's picture at 4K output with ray tracing on and reported, for a city street of a title it does not name over runs of 270 seconds on a Radeon RX 7900 XTX with five renderer patches on, about 9 frames a second walking with ray tracing, 16 without it, 23 at 1080p output and 16 on the smaller console's profile, the patches still off by default while they were tested, against 13 to 17 before them, said trees dropping out and lighting swinging in lamp-lit rooms were fixed on 26 November and that models and textures stay at low detail for a long time while the title streams, and no longer listed the 41-minute session without a crash that it reported on 25 November, while PortWatch's owner says it verified an earlier build at about 16 on average and nobody else has reproduced it.",
+      "changed": "2026-11-27T19:04:00Z",
+      "status": "Its repository stopped answering by 17:59 UTC on 27 November, and PortWatch now lists it as offline and says it is not known whether GitHub or its owner removed it, with no published takedown notice naming it. Its README (20:29 UTC on 26 November) last aimed first at the larger console's picture at 4K output with ray tracing on and reported, for a city street of a title it does not name over runs of 270 seconds on a Radeon RX 7900 XTX with five renderer patches on, about 9 frames a second walking with ray tracing, 16 without it, 23 at 1080p output and 16 on the smaller console's profile, the patches still off by default while they were tested, against 13 to 17 before them, said trees dropping out and lighting swinging in lamp-lit rooms were fixed on 26 November and that models and textures stay at low detail for a long time while the title streams, and no longer listed the 41-minute session without a crash that it reported on 25 November, while PortWatch's owner says it verified an earlier build at about 16 on average and nobody else has reproduced it.",
       "basis": "Project README and findings notes as last read before its repository stopped answering: its own measurements on one machine. PortWatch says its owner verified the average; not reproduced by anyone else",
       "lanes": {
         "picture": {
@@ -1473,8 +1473,8 @@
       "kind": "GTA VI recompilation toolchain",
       "stage": 5,
       "basis": "Project status page",
-      "status": "Shows every first-run screen, loads story mode and runs the opening scenes, with a world frame taking about 200 to 400 milliseconds. Its status page (15:43 UTC on 27 November) says geometry, normals and depth are right, that before post-processing a frame is a recognisable lit scene with brightness bands, that post-processing then makes it worse, that the picture no longer freezes on a white card because a translator bug that let a shadow program overwrite the start of a graphics heap is fixed, so the game now shows its first scene as live 3D that is still wrongly lit, with an orange, banded final frame covered in bars, and that the NVIDIA device loss is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
-      "changed": "2026-11-27T16:11:00Z",
+      "status": "Shows every first-run screen, loads story mode and runs the opening scenes, with a world frame taking about 200 to 400 milliseconds. Its status page (18:31 UTC on 27 November) says geometry, normals and depth are right, that before post-processing a frame is a recognisable lit scene with brightness bands, that a translator fix for literal samplers has cleared the posterized rings and most of the smear after post-processing, that the picture no longer freezes on a white card because a translator bug that let a shadow program overwrite the start of a graphics heap is fixed, so the game shows its first scene as live 3D, lit by one orange light only, with a black sky and unlit strips, and that the NVIDIA device loss is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
+      "changed": "2026-11-27T19:04:00Z",
       "tested": {
         "os": [
           "Windows"
@@ -1868,6 +1868,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T19:04:00Z",
+      "title": "PortWatch now says GitHub removed VIctory-Belobug-AMD over its Terms of Service, not a takedown notice",
+      "points": [
+        "PortWatch, which relayed the owner's account at 18:27 UTC on 27 November that a takedown notice was behind the loss of VIctory-Belobug-AMD's repository, said at 18:37 UTC that GitHub removed the repository and its owner's account for a Terms of Service violation instead, and that it confirmed this.",
+        "GitHub publishes no notice of removals under its Terms of Service, so nothing here can check that; the repository still does not answer over git, and GitHub's public notice log, whose newest entry is from 25 November, names neither it nor VIctory-7900XTX.",
+        "PortWatch now lists VIctory-7900XTX as offline too and says it is not known whether GitHub or its owner removed it. Both rows keep the figures they last reported and carry no link."
+      ]
+    },
     {
       "t": "2026-11-27T18:37:00Z",
       "title": "Victory-United's 36-minute session is now said to be played by hand, and its speed lane reads 10.0",
