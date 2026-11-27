@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T19:04:00Z",
+  "checked": "2026-11-27T19:49:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -202,12 +202,12 @@
       "kind": "Fork of VIctory, formerly named victory-gta6; based on VIctory-NVIDIA since 27 November, with ray tracing work of its own",
       "stage": 6,
       "basis": "Project README: the maintainer's own figures from one PC, not confirmed by anyone else; the rest of its README is VIctory-NVIDIA's text, which this row does not read",
-      "status": "Its README (17:52 UTC on 27 November) says this fork, now based on VIctory-NVIDIA, starts the game with its own ray tracing on by default, calls that work in progress and measures, in one play session on an RTX 4070 at 1920x1080, about 15 frames a second at 3,000 to 5,000 draws a frame and about 8 at 5,000 to 12,000, with the water's light on 32-lane cards now switched on and foam on the water still drawn dark. A 25-minute play session at 2560x1440 that averaged about 17 frames a second was run with VIctory-NVIDIA itself, which has ray tracing off by default, and the README gives no crash status for it, so the lanes read the ray-tracing figures of 8 to 15 frames a second and keep the 25 minutes, flagged as run with it off.",
-      "changed": "2026-11-27T18:02:00Z",
+      "status": "Its README (19:06 UTC on 27 November) says this fork, now based on VIctory-NVIDIA, starts the game with its own ray tracing on by default, calls that work in progress and measures, in one play session on an RTX 4070 at 1920x1080, about 15 frames a second at 3,000 to 5,000 draws a frame and about 8 at 5,000 to 12,000, with the open water now free of dark patches on that card and some vehicles' paint still coming out a flat lime green. A 25-minute play session at 2560x1440 that averaged about 17 frames a second was run with VIctory-NVIDIA itself, which has ray tracing off by default, and the README gives no crash status for it, so the lanes read the ray-tracing figures of 8 to 15 frames a second and keep the 25 minutes, flagged as run with it off.",
+      "changed": "2026-11-27T19:49:00Z",
       "lanes": {
         "picture": {
           "step": 3,
-          "text": "ray tracing on and unfinished; water foam dark, ray pages can lag"
+          "text": "ray tracing on, unfinished; flat lime vehicle paint, ray pages lag"
         },
         "speed": {
           "low": 8,
@@ -771,9 +771,9 @@
       "kind": "Fork of VIctory that now tunes Vice-Tay's renderer on an RTX 5080",
       "stage": 6,
       "pos": 18,
-      "changed": "2026-11-27T17:03:00Z",
-      "status": "Its README and results page (16:45 UTC on 27 November) report a 72-minute 53-second session at 1440p output on an RTX 5080 with a Ryzen 9 9950X3D, played by hand with a controller from the start of the game through open-world driving and on-foot play, at a median of 14.5 frames a second with frame generation off and ending in a clean exit. It says only 59 of 678 reports of about five seconds in the 59 minutes after first control reached 20 or better, lists a pink tint now and then, very dark shadows in low light and hard-edged dark rectangles on water, and sets a target of 25; nobody else has confirmed any of it.",
-      "basis": "Project README and results page on its default branch: the maintainer's own figures from one machine, one 73-minute session played by hand on a reference build, not confirmed by anyone else",
+      "changed": "2026-11-27T19:49:00Z",
+      "status": "Its README and results page (19:19 UTC on 27 November) report a 72-minute 53-second session at 1440p output on an RTX 5080 with a Ryzen 9 9950X3D, played by hand with a controller from the start of the game through open-world driving and on-foot play, at a median of 14.5 frames a second with frame generation off and ending in a clean exit. It says only 59 of 678 reports of about five seconds in the 59 minutes after first control reached 20 or better, adds four runs of a combined build that all ended cleanly, the longest on each console profile being 29 minutes 29 seconds at 1080p output on the smaller one with a median of 17.25 and 19 minutes 41 seconds at 1440p on the larger one with 14.7, lists a pink tint now and then, very dark shadows in low light and hard-edged dark rectangles on water, and sets a target of 25; nobody else has confirmed any of it.",
+      "basis": "Project README and results page on its default branch: the maintainer's own figures from one machine, one 73-minute session played by hand on a reference build and four shorter runs of a combined build, not confirmed by anyone else",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1072,9 +1072,9 @@
       "kind": "Fork of VIctory that combines work from several forks, measured on an RTX 5070 with 12 GB",
       "stage": 6,
       "pos": 28,
-      "changed": "2026-11-25T22:39:00Z",
-      "status": "Its README says a title it does not name can be played in its world for tens of minutes at a median of 6.4 to 9.9 frames a second by run on an RTX 5070 with 12 GB, about 12 at best, with no crash in 16 of 18 recorded sessions and the longest 25 minutes 34 seconds. It calls itself not playable yet and lists black boxes on the water, white eyes in some shots and textures that arrive late, with an ambient light standing in for ray-traced light.",
-      "basis": "Project README and its test-run record: the maintainers' own measurements on one machine, played by hand, not confirmed by anyone else",
+      "changed": "2026-11-27T19:49:00Z",
+      "status": "Its repository stopped answering by 18:59 UTC on 27 November, with no published takedown notice naming it and the reason not known. Its README last said a title it does not name could be played in its world for tens of minutes at a median of 6.4 to 9.9 frames a second by run on an RTX 5070 with 12 GB, about 12 at best, with no crash in 16 of 18 recorded sessions and the longest 25 minutes 34 seconds, called itself not playable yet and listed black boxes on the water, white eyes in some shots and textures that arrive late, with an ambient light standing in for ray-traced light.",
+      "basis": "Project README and its test-run record as last read, before its repository stopped answering: the maintainers' own measurements on one machine, played by hand, not confirmed by anyone else",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1097,7 +1097,8 @@
         "gpu": [
           "NVIDIA"
         ]
-      }
+      },
+      "nolink": true
     },
     {
       "name": "VIctory-NVIDIA",
@@ -1206,8 +1207,8 @@
       "repo": "Op-lite/victory-scarlett",
       "kind": "Fork of the code PortWatch lists as CGBJ, with a local fork's work ported onto it",
       "stage": 6,
-      "status": "Its README (00:52 UTC) says heavier scenes it plays by hand, a prison yard and the open world, run at 16 to 21 frames a second and that driving in the open world drops lower, to 50 to 90 milliseconds a frame, on an RTX 4080 SUPER with a Ryzen 7 9800X3D at 1440p on the larger console's profile with ray tracing off, in a title it does not name. It also counts 8,300 to 9,400 frames in a fixed six-minute opening route on a diagnostics build, reports no run length of play, lists purple patches that linger for a few seconds and streaks on characters, and says its goal of a stable 30 is not reached.",
-      "changed": "2026-11-27T08:17:00Z",
+      "status": "Its repository stopped answering by 18:59 UTC on 27 November, with no published takedown notice naming it and the reason not known. Its README (00:52 UTC) last said heavier scenes it plays by hand, a prison yard and the open world, ran at 16 to 21 frames a second and that driving in the open world dropped lower, to 50 to 90 milliseconds a frame, on an RTX 4080 SUPER with a Ryzen 7 9800X3D at 1440p on the larger console's profile with ray tracing off, in a title it does not name, and also counted 8,300 to 9,400 frames in a fixed six-minute opening route on a diagnostics build, reported no run length of play, listed purple patches that linger for a few seconds and streaks on characters, and said its goal of a stable 30 was not reached.",
+      "changed": "2026-11-27T19:49:00Z",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1231,7 +1232,8 @@
           "NVIDIA"
         ]
       },
-      "basis": "Project README, measured on one machine"
+      "basis": "Project README as last read, before its repository stopped answering, measured on one machine",
+      "nolink": true
     },
     {
       "pos": 0,
@@ -1814,7 +1816,8 @@
     {
       "name": "Neptune + GDeflate",
       "repo": "dudegio/Neptune-GDeflate",
-      "note": "A source-only tree of the Neptune edition of VIctory, the edition klbf-lab's newest test build is based on and AnyXboxX used until 26 November, with a faster loading path for the game's packed files and upscaling through a third-party tool. Its README gives build notes and no measurements of its own. It offers frame generation as an option, and generated frames never count here."
+      "note": "A source-only tree of the Neptune edition of VIctory, the edition klbf-lab's newest test build is based on and AnyXboxX used until 26 November, with a faster loading path for the game's packed files and upscaling through a third-party tool. Its README last gave build notes and no measurements of its own and offered frame generation as an option, and generated frames never count here. Its repository stopped answering by 18:59 UTC on 27 November, with no published takedown notice naming it and the reason not known.",
+      "nolink": true
     },
     {
       "name": "VIctory-reloaded",
@@ -1865,9 +1868,32 @@
       "name": "VIctory-AMD-4K",
       "repo": "elaboratecl/VIctory-AMD-4K",
       "note": "A fork of VIctory for AMD RDNA2 cards with 16 GB of system memory, tested on a Radeon RX 6800 with a Ryzen 5 5600 at native 4K with ray tracing off. Its README reports full 3D gameplay with a gamepad and a mouse camera at 13.0 to 16.1 frames a second, with no graphics device timeouts across sessions of 10 minutes or more, from one PC. It gives no session length or average, so it stays here until a played session with one is reported."
+    },
+    {
+      "name": "El1xr",
+      "repo": "kylepelham/El1xr",
+      "note": "A fork of AnyXboxX that, by its README (19:16 UTC on 27 November), calls the game playable in the open world, with a median of 23.5 frames a second in the world at 4K on an RTX 5090, read from the in-world part of one quiet 200-second test run that starts from a fixed checkpoint. Its older figures, from an RTX 4070 SUPER, are about 4 frames a second over a 13-minute session and a reported 2 over 45 minutes, and it lists black or blotched faces in about half of test runs and a stall of 3 to 9 seconds on entering the world. It stays here until a played session of 10 minutes or more with an average on its current build is reported."
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T19:49:00Z",
+      "title": "El1xr joins the watch list with a median of 23.5 frames a second from a short test run",
+      "points": [
+        "El1xr, a fork of AnyXboxX, says in its README (19:16 UTC on 27 November) that the game is playable in the open world, with a median of 23.5 frames a second at 4K on an RTX 5090, read from the in-world part of one quiet 200-second test run that starts from a fixed checkpoint.",
+        "That is a test run and not a played session, so it fills no lane and does not meet the bar, which asks for 30 minutes at 20 or more in one session of play. Its older played figures, on an RTX 4070 SUPER, are about 4 frames a second over 13 minutes and a reported 2 over 45 minutes.",
+        "The figures are the project's own, from one machine, and unconfirmed. The entry stays under Also watched until a played session of 10 minutes or more with an average on its current build is reported."
+      ]
+    },
+    {
+      "t": "2026-11-27T19:49:00Z",
+      "title": "The Scarlett fork, Vertex and Neptune + GDeflate stop answering",
+      "points": [
+        "None of the three repositories answers over git from here: all three were already failing at 18:59 UTC on 27 November and again at 19:11, 19:39 and 19:44 UTC, while every other linked repository answered.",
+        "PortWatch's data does not list any of them, the newest entry in GitHub's public notice log is from 25 November, before they stopped answering, and no reason has been reported.",
+        "The two table rows keep the figures they last reported, from README texts read before the repositories stopped answering, and with the watch-list entry now carry no link."
+      ]
+    },
     {
       "t": "2026-11-27T19:04:00Z",
       "title": "PortWatch now says GitHub removed VIctory-Belobug-AMD over its Terms of Service, not a takedown notice",
