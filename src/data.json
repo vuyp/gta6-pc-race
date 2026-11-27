@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T12:27:00Z",
+  "checked": "2026-11-27T12:58:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -1137,9 +1137,9 @@
       "repo": "Fayberr/Victory-United",
       "kind": "Tree that folds work from VIctory forks into one, rebuilt on 26 November on Vice-Tay's code",
       "stage": 6,
-      "changed": "2026-11-27T08:36:00Z",
-      "status": "Its README (07:48 UTC) says its tree, built on Vice-Tay's code, ran at 12 to 15 frames a second in four runs of 7 minutes standing at a window in the first playable room on an RTX 3080 Ti, at half render scale on the smaller console's profile, with no crash or lost graphics device and a lit picture whose character face and hair show horizontal stripes. It says it is not playable yet and aims at 20, and it reports no play on the new tree, so the lanes still read the 34.7 minutes played by hand at a median of 8.5 on its earlier one.",
-      "basis": "Project README: its own figures from one machine, not confirmed by anyone else. The lanes read one session played by hand on its earlier tree, with control given as the player's own observation; the new tree's figures are from a run standing still, which is not play",
+      "changed": "2026-11-27T12:58:00Z",
+      "status": "Its README (12:22 UTC) says its tree, built on Vice-Tay's code, now loads a save in the open world and renders the city, at 8 to 12 frames a second (9.5 on average) in three 7-minute runs of one fixed walking route on an RTX 3080 Ti at half render scale on the smaller console's profile, with no crash or lost graphics device and a lit street at night in the saved frames, against 12 to 15 standing at a window in the first room. It says it is not playable yet and aims at 20, and it reports no play on the new tree, so the lanes still read the 34.7 minutes played by hand at a median of 8.5 on its earlier one.",
+      "basis": "Project README: its own figures from one machine, not confirmed by anyone else. The lanes read one session played by hand on its earlier tree, with control given as the player's own observation; the new tree's figures are from runs of one fixed walking route and from standing at a window, which are not play",
       "tested": {
         "os": [
           "Windows"
@@ -1503,8 +1503,8 @@
       "kind": "Compatibility layer for Linux (Proton)",
       "stage": 5,
       "basis": "Project README, progress page and run records from two machines",
-      "status": "On Linux under Proton, its longest recorded run got into the story intro by the game's own state and lasted 18 minutes 11 seconds, with the graphics queues stalling, before ending on a game assert. Its README says the opening cutscene has not appeared, many shaders are unsupported and the game is not playable.",
-      "changed": "2026-11-25T12:20:00Z",
+      "status": "Its documents (12:45 UTC) now say the game reaches the prologue cutscene, which appears, and then crashes, that it is not playable and that 4,411 of 41,064 captured shader requests are still unsupported. Its longest recorded run, an earlier one on Linux, got into the story intro by the game's own state and lasted 18 minutes 11 seconds, with the graphics queues stalling, before ending on a game assert.",
+      "changed": "2026-11-27T12:58:00Z",
       "tested": {
         "os": [
           "Linux"
