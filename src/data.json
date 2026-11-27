@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T08:17:00Z",
+  "checked": "2026-11-27T08:36:00Z",
   "cadence_minutes": 15,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -440,17 +440,17 @@
       "kind": "Build of victory-fork with its own changes",
       "stage": 6,
       "basis": "Project README, measured on one machine",
-      "status": "Its README (07:00 UTC) reports 3.4 frames a second in the world on version 0.5.0 on an RTX 3060 on the smaller console's profile, with the player in control in the opening area and the full picture, and says version 0.5.2 is built and unit-tested but not yet measured in a game run on that card. It lists testers' own figures on 0.5.2, among them 1 hour 20 minutes without a crash and 8.5 frames a second in the world on an RTX 3070, an average of 9.1 on an RTX 3060, up to 15 in the prologue on an RTX 5060 and a median of 22.0 on an RX 9060 XT, says no long run has been recorded yet and sets its goal at a playable 30.",
-      "changed": "2026-11-27T07:21:00Z",
+      "status": "Its README (08:06 UTC) reports about 7 to 8 frames a second in the world on version 0.5.2 on an RTX 3060 with a warm cache on the smaller console's profile, against 3.4 on version 0.5.0, with the player in control in the opening area and the full picture, though its notes for 0.5.2 still say that version was not yet measured in a game run on that card. It lists testers' own figures on 0.5.2, among them 1 hour 20 minutes without a crash and 8.5 frames a second in the world on an RTX 3070, an average of 9.1 on an RTX 3060 and a median of 22.0 on an RX 9060 XT, says no long run has been recorded yet and sets its goal at a playable 30.",
+      "changed": "2026-11-27T08:36:00Z",
       "lanes": {
         "picture": {
           "step": 3,
           "text": "lit rooms, ambient and sky light, complete textures since 0.4.6"
         },
         "speed": {
-          "low": 3.4,
-          "high": 3.4,
-          "text": "3.4 fps in the world on 0.5.0, an RTX 3060"
+          "low": 7,
+          "high": 8,
+          "text": "about 7 to 8 fps in the world on 0.5.2, an RTX 3060, warm cache"
         },
         "stability": {
           "minutes": null,
@@ -1137,8 +1137,8 @@
       "repo": "Fayberr/Victory-United",
       "kind": "Tree that folds work from VIctory forks into one, rebuilt on 26 November on Vice-Tay's code",
       "stage": 6,
-      "changed": "2026-11-26T20:56:00Z",
-      "status": "Its README (16:56 UTC) says it rebuilt its tree on Vice-Tay's code on 26 November and measured about 11 frames a second standing at a window in the first playable room on an RTX 3080 Ti, at half render scale on the smaller console's profile, over runs of 7 and 10 minutes without a crash, the longer one slowly losing speed, with a lit picture free of the blocks its earlier tree showed. It says it is not playable yet and aims at 20, and it reports no play on the new tree, so the lanes still read the 34.7 minutes played by hand at a median of 8.5 on its earlier one.",
+      "changed": "2026-11-27T08:36:00Z",
+      "status": "Its README (07:48 UTC) says its tree, built on Vice-Tay's code, ran at 12 to 15 frames a second in four runs of 7 minutes standing at a window in the first playable room on an RTX 3080 Ti, at half render scale on the smaller console's profile, with no crash or lost graphics device and a lit picture whose character face and hair show horizontal stripes. It says it is not playable yet and aims at 20, and it reports no play on the new tree, so the lanes still read the 34.7 minutes played by hand at a median of 8.5 on its earlier one.",
       "basis": "Project README: its own figures from one machine, not confirmed by anyone else. The lanes read one session played by hand on its earlier tree, with control given as the player's own observation; the new tree's figures are from a run standing still, which is not play",
       "tested": {
         "os": [
@@ -1404,8 +1404,8 @@
       "kind": "GTA VI recompilation toolchain",
       "stage": 5,
       "basis": "Project status page",
-      "status": "Shows every first-run screen, loads story mode and runs the opening scenes. Its status page (07:09 UTC) says geometry, normals and depth are right and surface colour is right for most surfaces, that the lighting pass now shades its pixels on a branch that is not on main yet while the final frame is still banded, full of black holes, half black and blurred, at about 200 to 400 milliseconds a world frame, and that the NVIDIA device loss about 10 minutes in is fixed in one 14-minute boot, after it was traced to an internal shader table of the driver passing its 512 MiB maximum, with an RTX 5090 report still losing the device earlier in another way.",
-      "changed": "2026-11-27T07:21:00Z",
+      "status": "Shows every first-run screen, loads story mode and runs the opening scenes. Its status page (08:00 UTC) says geometry, normals and depth are right and surface colour is right for most surfaces, that a batch of translator changes is merged, so shaders are translated and compiled again on the next run, that the lighting pass shades its pixels on a branch that is not on main yet while the final frame is still banded, full of black holes, half black and blurred, at about 200 to 400 milliseconds a world frame, and that the NVIDIA device loss about 10 minutes in is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
+      "changed": "2026-11-27T08:36:00Z",
       "tested": {
         "os": [
           "Windows"
@@ -1791,9 +1791,23 @@
       "name": "Tequesta",
       "repo": "0v3rr/Tequesta",
       "note": "A Rust compatibility layer and Direct3D 12 translation runtime for NVIDIA RTX cards on Windows, with its own settings overlay and native keyboard and mouse input, tested on an RTX A4500 with 28 GB of system memory. Its README reports full character movement in the opening scenes and 5 to 27 frames a second in 3D scenes with a performance option on, and gives no session length and no crash record."
+    },
+    {
+      "name": "victory-rtx3060",
+      "repo": "Maykzera/victory-rtx3060",
+      "note": "A fork of VIctory-NVIDIA for an RTX 3060 12 GB with a Ryzen 5 5600X, with measurements from 26 November. Its README headlines 14 to 17 frames a second in the open world after warming up, from scripted 6-minute runs averaging 13.6 to 15.0 with the character standing in one place, plus a 17-minute open-world stretch at 12 to 14 that it does not describe as played. It reports no session of play with a length, so it stays on the watch list."
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T08:36:00Z",
+      "title": "ScarlettPort reports 7 to 8 frames a second on its newest version",
+      "points": [
+        "Its README (08:06 UTC) now gives about 7 to 8 frames a second in the world on version 0.5.2 on an RTX 3060 with a warm cache, up from 3.4 on version 0.5.0; its notes for 0.5.2 still say that version was not yet measured in a game run on that card.",
+        "Its speed lane moves from step 2 to step 3, so the row moves from 31st to 27th, 5 steps short of the bar (was 6), and the four rows it passes each move down one place.",
+        "The figure is the project's own, from one PC, and unconfirmed. The README still reports no long run, so its stability lane reads no run length."
+      ]
+    },
     {
       "t": "2026-11-27T08:17:00Z",
       "title": "victory-perf's repository answers again, and the Scarlett fork's mark is lifted",
