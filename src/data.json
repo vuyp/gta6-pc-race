@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T14:30:00Z",
+  "checked": "2026-11-27T15:02:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -1329,6 +1329,39 @@
       "basis": "Maintainer's results files on a separate branch of its repository: its own figures from one machine, not confirmed by anyone else"
     },
     {
+      "pos": 0,
+      "name": "M1LK",
+      "repo": "3cvil/M1LK",
+      "kind": "Fork of VIctory and the DexNom fork for NVIDIA cards with 8 GB, published on 26 November",
+      "stage": 6,
+      "status": "Its README (14:59 UTC on 27 November) says the player controls the character in the opening scenes, with walking, sprinting, strafing, jumping, mouse look and the pause menu responding, and reports a walking median of 4.5 frames a second, with lows of 3.6, on an RTX 4060 Laptop with 8 GB on the smaller console's profile with ray tracing off, from scripted keyboard and mouse runs. It says the picture is complete but dark without ray tracing, with interiors and backlit people near black, that no crash appears in its logs of tests 14 to 35 while the longest session without one is 20 minutes and a 40-minute run is not done, and that the processor side limits speed; nobody else has confirmed any of it.",
+      "changed": "2026-11-27T15:02:00Z",
+      "lanes": {
+        "picture": {
+          "step": 2,
+          "text": "outdoor and window light lit; interiors near black"
+        },
+        "speed": {
+          "low": 4.5,
+          "high": 4.5,
+          "text": "4.5 fps walking median in the latest scripted runs"
+        },
+        "stability": {
+          "minutes": 20,
+          "text": "20 minutes, no crash; 40-minute run not done yet"
+        }
+      },
+      "tested": {
+        "os": [
+          "Windows"
+        ],
+        "gpu": [
+          "NVIDIA"
+        ]
+      },
+      "basis": "Project README: the maintainer's own figures from one laptop, from scripted keyboard and mouse runs; not confirmed by anyone else"
+    },
+    {
       "pos": 31,
       "name": "PercyScarlett",
       "repo": "rpatty-dev/PercyScarlett",
@@ -1795,6 +1828,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T15:02:00Z",
+      "title": "An NVIDIA fork for 8 GB cards reports player control at 4.5 frames a second",
+      "points": [
+        "M1LK, a fork of VIctory and the DexNom fork tuned for NVIDIA cards with 8 GB and PCs with 16 GB of RAM, joins the table at stage 6 on a reader's request. Its README (14:59 UTC on 27 November) says the player controls the character in the opening scenes and reports a walking median of 4.5 frames a second, with lows of 3.6, on an RTX 4060 Laptop on the smaller console's profile with ray tracing off.",
+        "This page reads speed 4.5 (step 2), stability 20 minutes (step 2) and a picture lit outdoors and by windows but near black indoors (step 2), so the row enters at 26th, 4 steps short of the bar. Its README says no crash appears in its logs of tests 14 to 35, the longest session without one is 20 minutes and a 40-minute run has not been done.",
+        "The figures are the project's own, from one laptop and from scripted keyboard and mouse runs, and nobody else has confirmed them."
+      ]
+    },
     {
       "t": "2026-11-27T14:05:00Z",
       "title": "PortWatch removes its pinned multiplayer message",
