@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T13:30:00Z",
+  "checked": "2026-11-27T14:05:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -737,22 +737,22 @@
       "repo": "voidopcode/vilocity",
       "kind": "Xbox Series compatibility layer for Windows, published on 25 November",
       "stage": 6,
-      "basis": "Project README, tested on one machine",
-      "changed": "2026-11-27T05:25:00Z",
-      "status": "Its README (04:51 UTC on 27 November) now reports 24 to 29 frames a second over a scripted walk and run through the day scene at 6,300 to 8,700 draws a frame on an RTX 5080 with a Ryzen 9 9950X3D on the smaller console's profile, up from 11 to 18 with freezes, after it changed how the game's pages are mapped, and its status table still reads 26 to 27 at 5,000 draws and 17 to 19 at 10,000 to 11,000. It still lists a driver timeout about 7 minutes in and 26 console programs whose draws are dropped on 32-lane cards, adds that shade is too dark in daylight, water is not fixed and 30 is not held everywhere, and says the game is not playable yet.",
+      "basis": "Project README: its own figures from unattended twelve-minute runs on one machine, not confirmed by anyone else",
+      "changed": "2026-11-27T14:05:00Z",
+      "status": "Its README (13:23 UTC on 27 November) now marks the world as keeping running, with twelve minutes of the opening and twelve in the open world (mostly standing, with three short walks), both unattended, without a lost device, a log error or a driver timeout, where it listed a driver timeout about 7 minutes in before, and says longer play is not measured. It reports a median of 33 frames a second through the opening, 28 to 29 at 5,000 draws a frame and 25 at 9,000 in the open world on an RTX 5080 with a Ryzen 9 9950X3D on the smaller console's profile, up from 26 to 27 and 17 to 19, says 30 is not held where the world is dense, still lists 26 console programs whose draws are dropped on 32-lane cards and textures that can appear late, and says the game is not playable yet.",
       "lanes": {
         "picture": {
           "step": 3,
           "text": "shade, faces, water, sky right; draws dropped, late textures"
         },
         "speed": {
-          "low": 17,
-          "high": 27,
-          "text": "26 to 27 fps at 5,000 draws, 17 to 19 at 10,000 to 11,000"
+          "low": 25,
+          "high": 29,
+          "text": "25 fps at 9,000 draws, 28 to 29 at 5,000, open world, unattended"
         },
         "stability": {
-          "minutes": 7,
-          "text": "about 7 minutes"
+          "minutes": 12,
+          "text": "12 minutes unattended, no loss or timeout"
         }
       },
       "tested": {
@@ -1405,8 +1405,8 @@
       "kind": "GTA VI recompilation toolchain",
       "stage": 5,
       "basis": "Project status page",
-      "status": "Shows every first-run screen, loads story mode and runs the opening scenes, with a world frame taking about 200 to 400 milliseconds. Its status page (08:47 UTC) says geometry, normals and depth are right, that the lighting pass now shades its pixels so that before post-processing a frame is a recognisable lit scene with brightness bands and some black blocks, that post-processing then makes it worse with a black sky, flat banded colour and blur, that the game stalls on a loading card after the intro, and that the NVIDIA device loss is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
-      "changed": "2026-11-27T09:17:00Z",
+      "status": "Shows every first-run screen, loads story mode and runs the opening scenes, with a world frame taking about 200 to 400 milliseconds. Its status page (13:31 UTC on 27 November) says geometry, normals and depth are right and that before post-processing a frame is a recognisable lit scene, with brightness bands that follow a packed underwater mask, that post-processing then makes it worse, with a black sky, flat banded colour, blur and a velocity target full of infinities, that the picture freezes on a white card while the game runs on behind it, because a GPU pass overwrites the start of a graphics heap that holds the quad the final composite draws, and that the NVIDIA device loss is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
+      "changed": "2026-11-27T14:05:00Z",
       "tested": {
         "os": [
           "Windows"
@@ -1599,8 +1599,8 @@
       "kind": "Compatibility layer for Xbox Series games",
       "stage": 4,
       "basis": "Project README",
-      "status": "Presents black frames at 30 frames a second from 3 seconds after starting a retail title it does not name, after building over 80,000 pipelines from translated shaders. Its README (12:22 UTC) says five stops in the title's first seconds are fixed, that runs on its development host now end within 2 to 30 seconds because the host runs out of committed memory, that a gamepad and the keyboard are read and that its frames are still black because the loading screen's draws reach no render target, with a memory-access change not yet tried on the title.",
-      "changed": "2026-11-27T12:27:00Z",
+      "status": "Presents black frames at 30 frames a second from 3 seconds after starting a retail title it does not name, after building over 80,000 pipelines from translated shaders. Its README (13:31 UTC on 27 November) says those frames were black because the loading screen's draws reached no render target, lists five causes it has since found and fixed, among them vertex reads from the start of a buffer, native pipelines with no render target or depth test and textures read as one colour channel, each checked in a sample title, and says none is tried on the title yet because its host must restart first, after runs there ended within 2 to 30 seconds when the host ran out of committed memory.",
+      "changed": "2026-11-27T14:05:00Z",
       "tested": {
         "os": [],
         "gpu": []
@@ -1700,7 +1700,7 @@
     {
       "name": "HybridGt",
       "repo": "LowBacon/HybridGt",
-      "note": "Engineering work that runs inside victory-fork, tested on an RTX 4070 Ti. Its README says it is not yet playable at a good frame rate: on a new game the intro, menus and opening render with whole characters at a median of 6.3 frames a second in the world, best 8.7, with victory-fork's newest work merged. On 26 November it reports building the code PortWatch lists as CGBJ as published and measuring a median of 2.7 on the same PC on the smaller console's profile, the same for a combined build of the two, and says its own tree stays its build to play."
+      "note": "Engineering work built on another project's runtime, tested on an RTX 4070 Ti, which since its 0.2.0 release is VIctory-NVIDIA's with its own patches on top, where it ran inside victory-fork before. Its README (13:43 UTC on 27 November) reports a median of 14.2 frames a second in the world, best 18.0, against 5.8 for its earlier runtime over the same scripted route, with 5.6 GB of graphics memory in use against 9.2. Its performance notes still list textures that look pixelated or off-colour until they load and eyes and mouths that look wrong, and relay a tester's remark of a stable 15 frames a second, which this page does not count."
     },
     {
       "name": "Sixth Star",
@@ -1795,6 +1795,15 @@
     }
   ],
   "updates": [
+    {
+      "t": "2026-11-27T14:05:00Z",
+      "title": "vilocity reports 12 unattended minutes in the open world at 25 to 29 frames a second",
+      "points": [
+        "Its README (13:23 UTC) now marks the world as keeping running: twelve minutes of the opening and twelve in the open world, unattended, with no lost device, log error or driver timeout, where it listed a driver timeout about 7 minutes in before; it says longer play is not measured.",
+        "This page reads those runs as its lanes, because the row has no figure from play: stability 12 minutes (was about 7) and speed 25 to 29 frames a second in the open world (was 17 to 27). It moves from 10th place to 4th, 1 step short of the bar.",
+        "The figures are the project's own, from one PC, from unattended runs that were mostly standing in the open world rather than play, and unconfirmed."
+      ]
+    },
     {
       "t": "2026-11-27T13:30:00Z",
       "title": "VI-BR-PORT reports 27 to 29 frames a second in scripted runs, boat included",
