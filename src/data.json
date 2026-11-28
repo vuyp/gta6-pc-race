@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-27T23:43:00Z",
+  "checked": "2026-11-28T00:17:00Z",
   "cadence_minutes": 30,
   "playable": "Yes, by one project's own report, unverified",
   "leader": "klbf-lab, a build of VIctory tested on AMD cards,",
@@ -1274,8 +1274,8 @@
       "repo": "halfwave50/VIctory-macOS-halfwave50",
       "kind": "Fork of VIctory-macOS for Apple Silicon Macs through Wine and Apple's D3DMetal, its own repository since 27 November",
       "stage": 6,
-      "status": "Its README (18:57 UTC on 27 November) says the world loads and gives player control, saved games load, and sunlight, shadows, room lighting and screen reflections are right, and reports 3.1 to 3.4 frames a second at the prison checkpoint, 3.0 at 1080p output, and 2.0 driving the boat, the median of a 9-minute play run at 1080p output, on a MacBook Pro M4 Pro with 48 GB, on the larger console's profile. It says the boat's 4.8 to 4.9 frames a second (4.9 at 1080p), and the earlier 4.7 and 6.0, were the cutscene that opens the boat mission and not driving, lists objects that flicker black for a frame, a controller that stopped responding soon after driving began in one play run, night streets and rooms flatter than on the console, one black patch on water and distant trees and buildings that appear 5 to 35 seconds late after a camera cut, says playable speed is not reached with a next goal of 5 and then 10 at 1080p, and relays ten other Macs' reports, from 0.2 to 4.1 frames a second, which this page does not read into a lane.",
-      "changed": "2026-11-27T20:10:00Z",
+      "status": "Its README (as republished by 00:09 UTC on 28 November) says the world loads and gives player control, saved games load, and sunlight, shadows, room lighting and screen reflections are right, and reports 3.1 to 3.4 frames a second at the prison checkpoint, 3.0 at 1080p output, and 2.0 driving the boat, the median of a 9-minute play run at 1080p output, on a MacBook Pro M4 Pro with 48 GB, on the larger console's profile. It says the boat's 4.8 to 4.9 frames a second (4.9 at 1080p), and the earlier 4.7 and 6.0, were the cutscene that opens the boat mission and not driving, lists objects that flicker black for a frame, a controller that stopped responding soon after driving began in one play run, night streets and rooms flatter than on the console, one black patch on water and distant trees and buildings that appear 5 to 35 seconds late after a camera cut, says playable speed is not reached with a next goal of 5 and then 10 at 1080p, and relays twelve other Macs' reports, from 0.2 to 4.1 frames a second, which this page does not read into a lane.",
+      "changed": "2026-11-28T00:17:00Z",
       "lanes": {
         "picture": {
           "step": 4,
@@ -1371,8 +1371,8 @@
       "repo": "randomguy12000/VIctorious",
       "kind": "Fork of VIctory by way of VIctory-7900XTX, tuned for AMD RDNA 4 cards",
       "stage": 6,
-      "status": "Its README on the 7900-base branch (16:13 UTC on 27 November) reports a title it does not name running with the player driving in the world on an RX 9070 XT with a Ryzen 7 9800X3D and 32 GB of RAM on the smaller console's profile, at about 38 milliseconds a frame, 26 frames a second, with lamps that can flicker and trees that can pop, or about 43, 23 frames a second, with stable lights, in scenes of 4,000 to 7,000 draws a frame, and at 15 to 17 frames a second on the larger console's profile, which it calls sharper and heavier. It lists a little geometry flicker, textures of roads and buildings that can be late or black while the game streams and frame generation that flickers at today's real frame rate, reports no run length or crash status for this fork, and sets a goal of a steady 30 frames a second that it says it has not reached; nobody else has confirmed any of it.",
-      "changed": "2026-11-27T16:17:00Z",
+      "status": "Its README on the 7900-base branch (23:41 UTC on 27 November) reports a title it does not name running with the player driving in the world on an RX 9070 XT with a Ryzen 7 9800X3D and 32 GB of RAM on the smaller console's profile, at about 38 milliseconds a frame, 26 frames a second, with lamps that can flicker and trees that can pop, or about 43, 23 frames a second, with stable lights, in scenes of 4,000 to 7,000 draws a frame, and at 15 to 17 frames a second on the larger console's profile, which it calls sharper and heavier. It lists a little geometry flicker, textures of roads and buildings that can be late or black while the game streams and frame generation that flickers at today's real frame rate, gives three long sessions on the same PC, a 43-minute one before its newest fixes with frame times climbing from about 35 to 47 milliseconds to 54 to 89 as memory filled, an 11-minute one at 33 to 44 and a 14-minute one at 33 to 40 rising to 44 to 54, reports no crash status for this fork, and sets a goal of a steady 30 frames a second that it says it has not reached; nobody else has confirmed any of it.",
+      "changed": "2026-11-28T00:17:00Z",
       "lanes": {
         "picture": {
           "step": 3,
@@ -1385,7 +1385,7 @@
         },
         "stability": {
           "minutes": null,
-          "text": "no run length reported"
+          "text": "43, 14 and 11 min sessions reported, no crash statement"
         }
       },
       "tested": {
@@ -1475,8 +1475,8 @@
       "kind": "GTA VI recompilation toolchain",
       "stage": 5,
       "basis": "Project status page",
-      "status": "Shows every first-run screen, loads story mode and runs the opening scenes, with a world frame taking about 200 to 400 milliseconds. Its status page (20:28 UTC on 27 November) says geometry, normals and depth are right, that sun with cascade shadows, a sky and a stand-in ambient term now reach the frame, so that the first scene's yard reads as the game's sunset scene, with bars of sunlight where there should be shadow, dark lamps and some black blocks still wrong, that a translator fix for literal samplers has cleared the posterized rings and most of the smear after post-processing, that the picture no longer freezes on a white card because a translator bug that let a shadow program overwrite the start of a graphics heap is fixed, so the game shows its first scene as live 3D, and that the NVIDIA device loss is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
-      "changed": "2026-11-27T20:44:00Z",
+      "status": "Shows every first-run screen, loads story mode and runs the opening scenes, with a world frame taking about 200 to 400 milliseconds. Its status page (23:41 UTC on 27 November) says geometry, normals and depth are right, that sun with cascade shadows, a sky and a stand-in ambient term now reach the frame, so that the first scene's yard reads as the game's sunset scene, after its bars of sunlight on shadowed walls were fixed, with dark bands on sunlit ground, dark lamps and some black blocks still wrong, that a translator fix for literal samplers has cleared the posterized rings and most of the smear after post-processing, that the picture no longer freezes on a white card because a translator bug that let a shadow program overwrite the start of a graphics heap is fixed, so the game shows its first scene as live 3D, and that the NVIDIA device loss is fixed in one 14-minute boot, with an RTX 5090 report still losing the device earlier in another way.",
+      "changed": "2026-11-28T00:17:00Z",
       "tested": {
         "os": [
           "Windows"
