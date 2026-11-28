@@ -106,17 +106,25 @@ def day(iso):
     return f"{d.day} {d.strftime('%b')}"
 
 
+def long_day(iso):
+    d = parse(iso)
+    return f"{d.day} {d.strftime('%B')} {d.year}"
+
+
 stages = data["stages"]
 top = len(stages) - 1
 fc = data["forecast"]
 # data["paused"]: ISO time at which automatic checks were paused; absent while they run. While paused the
 # estimate does not count down (page.js leaves a target it cannot read alone) and the copy says so.
 PAUSED = data.get("paused")
+# data["ended"]: ISO time at which the tracker was stopped for good; absent while it runs. The page then opens with a
+# notice, speaks of its checks in the past tense and says every figure is as of the last check (data["checked"]).
+ENDED = data.get("ended")
 # fc["met"]: set when a report meets the playable bar: {"t": ISO time of the check that counted it, "line": a sentence
 # or two on whose report it is and what nobody has checked}. The estimate then stops counting down (page.js leaves a
 # target it cannot read alone), its headings change and the chances are left out. Absent until then.
 MET = fc.get("met")
-fc_count = "paused" if (PAUSED or MET) else fc["target"]
+fc_count = "paused" if (PAUSED or MET or ENDED) else fc["target"]
 last_rev = fc["revisions"][0]
 
 # ---------------------------------------------------------------- lanes, and the order they give
@@ -250,8 +258,8 @@ if private:
     extra = f" and {WORDS[len(private)].lower()} private build{'' if len(private) == 1 else 's'}"
 
 hero_fact = (
-    f"Playable: {esc(data['playable']).lower()}. "
-    f"{esc(lead.get('lead') or lead['name'])} is furthest, at stage&nbsp;{lead['stage']}&nbsp;of&nbsp;{top}."
+    f"{'At the last check, playable' if ENDED else 'Playable'}: {esc(data['playable']).lower()}. "
+    f"{esc(lead.get('lead') or lead['name'])} {'was' if ENDED else 'is'} furthest, at stage&nbsp;{lead['stage']}&nbsp;of&nbsp;{top}."
 )
 
 # ---------------------------------------------------------------- standings
@@ -515,18 +523,52 @@ FAVICON = (
 )
 
 hero_reads = (
+    f"This page read their public repositories every {esc(data['cadence_minutes'])} minutes until its last check, and says how far each had got then."
+    if ENDED else
     f"This page read their public repositories every {esc(data['cadence_minutes'])} minutes and says how far each had got when its automatic checks were paused."
     if PAUSED else
     f"This page reads their public repositories every {esc(data['cadence_minutes'])} minutes and says how far each has got."
 )
-checked_word = "Last checked" if PAUSED else "Checked"
-close_head = "Automatic checks are paused" if PAUSED else f"Standings checked every {esc(data['cadence_minutes'])} minutes"
-TITLE = "GTA VI PC Race: live tracker of unofficial PC ports"
-DESC = (
-    "How far each open-source project has got in running the Xbox build of GTA VI on a PC, "
-    + ("as of the last check before automatic checks were paused, " if PAUSED else f"checked every {esc(data['cadence_minutes'])} minutes, ")
-    + ("and the first report of a playable session, by the project's own account." if MET else "with a best estimate of when it becomes playable.")
+are_trying = "were trying" if ENDED else "are trying"
+checked_word = "Last checked" if (PAUSED or ENDED) else "Checked"
+close_head = (
+    "No longer updated" if ENDED else
+    "Automatic checks are paused" if PAUSED else
+    f"Standings checked every {esc(data['cadence_minutes'])} minutes"
 )
+TITLE = (
+    "GTA VI PC Race: tracker of unofficial PC ports, no longer updated" if ENDED else
+    "GTA VI PC Race: live tracker of unofficial PC ports"
+)
+if ENDED:
+    DESC = (
+        f"How far each open-source project had got in running the Xbox build of GTA VI on a PC at the last check, on {long_day(data['checked'])}, "
+        + ("and the first report of a playable session, by the project's own account. " if MET else "with a best estimate of when it becomes playable. ")
+        + "No longer updated."
+    )
+else:
+    DESC = (
+        "How far each open-source project has got in running the Xbox build of GTA VI on a PC, "
+        + ("as of the last check before automatic checks were paused, " if PAUSED else f"checked every {esc(data['cadence_minutes'])} minutes, ")
+        + ("and the first report of a playable session, by the project's own account." if MET else "with a best estimate of when it becomes playable.")
+    )
+
+# The notice that opens the page once the tracker has stopped (data["ended"]): in flow under the fixed bar, so its words wrap
+# at any width. Its time is a <time> element like every other, so the reader's own zone applies to it too.
+ended_banner = ""
+if ENDED:
+    ended_text = txt(
+        f"This tracker has stopped checking the projects. Everything below is as it stood at the last check, at "
+        f"{clock(data['checked'])} UTC on {long_day(data['checked'])}, and will fall out of date.",
+        data["checked"],
+    )
+    ended_banner = f"""
+  <div class="ended ground-inverse" role="note">
+    <div class="wrap ended__in">
+      <p class="ended__lead">No longer updated</p>
+      <p class="ended__text">{ended_text}</p>
+    </div>
+  </div>"""
 SITE = "https://vuyp.github.io/gta6-pc-race/"
 
 page = f"""<!DOCTYPE html>
@@ -573,13 +615,13 @@ page = f"""<!DOCTYPE html>
   </div>
 </header>
 
-<main id="top">
+<main id="top">{ended_banner}
   <section class="hero" data-enter>
     <div class="wrap grid">
       <div class="hero__words">
         <h1 class="enter">GTA VI PC port tracker</h1>
         <p class="lead hero__fact enter">{hero_fact}</p>
-        <p class="hero__how enter">{count} open-source projects{extra} are trying to run the game&rsquo;s Xbox build on a PC. {hero_reads} <span class="muted">{checked_word} <time id="checked" datetime="{esc(data['checked'])}" data-t="clock-day">{clock(data['checked'])} UTC on {esc(day(data['checked']))}</time><span id="ago"></span>. {TZ_BTN}</span></p>
+        <p class="hero__how enter">{count} open-source projects{extra} {are_trying} to run the game&rsquo;s Xbox build on a PC. {hero_reads} <span class="muted">{checked_word} <time id="checked" datetime="{esc(data['checked'])}" data-t="clock-day">{clock(data['checked'])} UTC on {esc(day(data['checked']))}</time><span id="ago"></span>. {TZ_BTN}</span></p>
         <div class="btn-row enter">
           <a class="btn btn--primary" href="#standings">See the standings</a>
           <a class="btn btn--secondary" href="#updates">Read the latest update</a>

@@ -16,7 +16,9 @@
     var t = document.getElementById("checked");
     var mins = Math.round((Date.now() - new Date(t.getAttribute("datetime")).getTime()) / 60000);
     if (isFinite(mins) && mins >= 0) {
-      var text = mins < 1 ? "just now" : mins < 90 ? mins + " min ago" : Math.round(mins / 60) + " h ago";
+      var hrs = Math.round(mins / 60), days = Math.round(mins / 1440), months = Math.round(days / 30.4);
+      var text = mins < 1 ? "just now" : mins < 90 ? mins + " min ago" : hrs < 48 ? hrs + " h ago"
+        : days < 60 ? days + " days ago" : months < 24 ? months + " months ago" : Math.round(days / 365) + " years ago";
       document.getElementById("ago").textContent = ", " + text;
     }
   } catch (e) {}

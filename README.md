@@ -1,12 +1,14 @@
 # GTA VI PC Race
 
-An unofficial status page tracking the open-source projects trying to run GTA VI on a PC.
+An unofficial status page that tracked the open-source projects trying to run GTA VI on a PC.
 
-Live page: https://vuyp.github.io/gta6-pc-race/
+**This tracker is no longer updated.** Its last check was at 00:17 UTC on 28 November 2026. Nothing on the page or in this repository is read or changed after that, so it will fall out of date.
 
-- Status only. One project counts as playable by its own report, which nobody else has checked. This repository holds no game files, no downloads and no instructions.
-- Every stage shown is the project's own claim, read from its public repository.
-- Compiled automatically by an AI assistant (Claude) and checked about every 30 minutes. It can be wrong.
+The page, as last published: https://vuyp.github.io/gta6-pc-race/
+
+- Status only. At the last check one project counted as playable by its own report, which nobody else had checked. This repository holds no game files, no downloads and no instructions.
+- Every stage shown is the project's own claim, read from its public repository at the last check.
+- Compiled automatically by an AI assistant (Claude), which checked about every 30 minutes until the last check. It can be wrong, and it is now out of date.
 - Not affiliated with Rockstar Games, Take-Two Interactive, Microsoft or any project listed.
 
 ## Stages and lanes
@@ -23,13 +25,13 @@ Rows at stage 6 and at stage 7 are each ordered by their lanes alone: fewest ste
 
 ## Requests and corrections
 
-Open an [issue](https://github.com/vuyp/gta6-pc-race/issues) to ask for a project to be added, corrected or taken off the page. For a new project, give its public repository and the file where it states its own progress. The page reports what a project's repository says, so a claim needs to be written there first.
+This tracker is no longer updated, so a request to add, correct or take off a project will not be acted on.
 
-The page does not link to the leaked build, to downloads, streams or chats, or to instructions and tools for running anything. Requests for those are declined.
+The page does not link to the leaked build, to downloads, streams or chats, or to instructions and tools for running anything.
 
-## Changing the page itself
+## The page's source
 
-`index.html` is generated. Its source is in [`src/`](src): `data.json` holds everything the page says, `build.py` renders it (the order of the rows with lanes is computed there, in `rank_key`), and `page.css` and `page.js` are its styles and script. The folder is copied here at every check. It is rebuilt from the tracker's data at every check, so a direct edit to it is overwritten within minutes. Ideas for the page are welcome as issues, or as a pull request that shows the change. Accepted ones are rebuilt into the page's source and credited in the commit.
+`index.html` is generated. Its source is in [`src/`](src), as it stood at the last check: `data.json` holds everything the page says, `build.py` renders it (the order of the rows with lanes is computed there, in `rank_key`), and `page.css` and `page.js` are its styles and script.
 
 ## Credits
 

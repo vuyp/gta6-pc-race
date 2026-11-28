@@ -1879,6 +1879,14 @@
   ],
   "updates": [
     {
+      "t": "2026-11-28T00:47:00Z",
+      "title": "This tracker is no longer updated",
+      "points": [
+        "The tracker has stopped checking the projects. Its last check was at 00:17 UTC on 28 November, and the standings, the section on the playable report and every update below are as they stood then.",
+        "Nothing on this page will be read again, so a stage, a figure or a report may have changed since. Every stage is still the project's own claim, and the page still links to no build, download or instructions."
+      ]
+    },
+    {
       "t": "2026-11-27T23:19:00Z",
       "title": "Vice-Tay says development is paused until Monday",
       "points": [
@@ -4048,7 +4056,7 @@
     },
     {
       "label": "Who compiles it",
-      "text": "An AI assistant (Claude), automatically, about every 30 minutes. It can be wrong."
+      "text": "An AI assistant (Claude), automatically, about every 30 minutes until the last check at 00:17 UTC on 28 November. It can be wrong, and nothing has been checked since."
     },
     {
       "label": "Affiliation",
@@ -4060,9 +4068,8 @@
     },
     {
       "label": "Requests",
-      "text": "To ask for a project to be added, corrected or taken off this page,",
-      "href": "https://github.com/vuyp/gta6-pc-race/issues",
-      "link": "open an issue on its repository"
+      "text": "This tracker is no longer updated, so a request to add, correct or take off a project will not be acted on."
     }
-  ]
+  ],
+  "ended": "2026-11-28T00:47:00Z"
 }
